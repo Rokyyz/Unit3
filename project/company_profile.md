@@ -24,9 +24,28 @@ Coding legends, don't miss your shot at being part of the Rok revolution. Join m
 
 ## Raw materials needed for the item
 
+Composite
+Composite is produced from two or more constituent materials, known for its low price, lighter weight, and excellent durability.
+
+That’s why it is used for the basketball ball’s outer covering. This cover usually interacts with the hard ground of a field, so strong and durable materials are needed in the manufacturing procedure.  
+
+Leather
+Leather is a strong, flexible, and durable material obtained from tanning, chemical treatment, or the decay of an animal’s skin. Besides composite, this material is also trusted to make a ball. 
+
+A leather cover will be the whole grain with simple stitches cast by a heavy-duty machine instead of indented channels. Yet, manufacturers should be concerned about leather waste due to its thickness, color, and surface irregularities.  
+
+Rubber
+Rubber is an organic compound that is famous for its elasticity and strength. A basketball ball’s bladder is made of this material because hard rubber can prevent it from exploding when too much air is inside. 
+
+A rubber bladder also proves its supremacy in bouncing and rebounding over other materials. Some balls even have their surface made from synthetic laminated or smooth rubber.   
+
+Synthetic
+Humans create synthetic fibers through chemical synthesis. Synthetic materials, like TPU, are used for coverings because they add more stability to the ball when shooting, but the ability to bounce back seems to be diminished. [^2]
+
 [^1]: makeaball. "Make a ball" Design, basketball, 
 https://www.makeaball.com/designtool/basketball/horizontal/2?design_id=1141217&identifier=identifier_1705244397856&design_with=designtool
 
+[^2]: Sportssio. "Basketball Materials: What Should You Know About?" What Types Of Materials Are Used To Make A Basketball?,
+https://www.sportssio.com/basketball-materials/
 
-[^2]:
 [^3]:
