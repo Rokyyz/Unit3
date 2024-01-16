@@ -44,7 +44,8 @@ As a dedicated and aspiring computer science student at UWC ISAK Japan, currentl
 + Web Services: API integration using requests library
 + Database Handling: Reading, appending to .csv files
 + Version Control: GitHub
-+ Personal Attributes:
+  
+**Personal Attributes:**
 
 + **Analytical Thinker**: Demonstrated ability to analyze complex problems and implement effective solutions.
 + **Team Player:** Proven success in collaborative projects, effectively communicating ideas and working towards common goals.
