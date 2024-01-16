@@ -1,6 +1,6 @@
-# Developer VC
+# Developer CV
 
-## Curriculum Vitae
+**Curriculum Vitae**
 
 Edvards Rokens
 5827-136 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111
