@@ -14,6 +14,7 @@ As a dedicated and aspiring computer science student at UWC ISAK Japan, currentl
 
 + **UWC ISAK Japan**
 + Pursuing Higher-Level Computer Science in the IB Diploma Program
++ Programing languages: main language - Python, basic experience with C+
 + Summer of 2023 - Present
 
 
