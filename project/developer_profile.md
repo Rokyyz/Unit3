@@ -3,8 +3,11 @@
 **Curriculum Vitae**
 
 Edvards Rokens
+
 5827-136 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111
+
 Karuizawa, Japan
+
 2025.edvards.japana@uwcisak.jp | 29421129 | ig:@edvardsrokens
 
 **Objective:**
