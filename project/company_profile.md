@@ -47,13 +47,15 @@ A rubber bladder also proves its supremacy in bouncing and rebounding over other
 Synthetic
 Humans create synthetic fibers through chemical synthesis. Synthetic materials, like TPU (Thermoplastic Polyurethane), are used for coverings because they add more stability to the ball when shooting, but the ability to bounce back seems to be diminished. [^2][^3][^4]
 
-## Basketball specs [^6}
+## Basketball specs 
 
 | Date of creation | Color             | Circumference | Weight | Size |
 |------------------|-------------------|---------------|--------|------|
 | Jan 17th 2023    | green             | 29.5"         | 17oz   | 5    |
 | Jan 18th 2023    | blue              | 28.5"         | 20oz   | 6    |
 | Jan 19th 2023    | red, white, black | 27.5"         | 22oz   | 7    |
+
+[^6]
 
 [^1]: makeaball. "Make a ball" Design, basketball, 
 https://www.makeaball.com/designtool/basketball/horizontal/2?design_id=1141217&identifier=identifier_1705244397856&design_with=designtool
