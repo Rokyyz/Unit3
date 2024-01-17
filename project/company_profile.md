@@ -12,7 +12,7 @@ Ladies and gentlemen, have you ever been playing a game of ball and not been sat
 
 Here at Rok, we're not just shooting hoops, we're changing the game by crafting basketballs as sturdy, durable, and long-lasting as rocks. Yes, you heard it right – Rok is here to rock your basketball world!
 
-Our basketballs are not just a slam dunk, they're a powerhouse of innovation. Made with a unique blend of cutting-edge materials, each Rok basketball is designed to withstand the toughest plays, making it the MVP (most valuable player) of the court.
+Our basketballs are not just a slam dunk, they're a powerhouse of innovation. Made with a unique blend of cutting-edge materials, each Rok basketball is designed to withstand the toughest plays, making it the MVP (most valuable player) of the court, thus qualifying for the NBA basketball standarts.
 
 I know what you're thinking – 'Are these basketballs as tough as they say?' Well, we put them to the ultimate test, and let me tell you, they're so durable, that even Chuck Norris would be impressed!
 
