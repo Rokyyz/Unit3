@@ -22,6 +22,11 @@ Now, I know you coders are always looking for the slam dunk project. That's why 
 
 Coding legends, don't miss your shot at being part of the Rok revolution. Join me, and together, we can create a legacy that's as unbreakable as the backboard and the ball itself. Rok – because in basketball and business, it's all about staying rock-solid!
 
+
+## Structure of a basketball
+
+![basketball cs](https://github.com/Rokyyz/Unit3/assets/134658259/e7928500-0660-4c9e-afd9-0b2dac7fa239) [^5]
+
 ## Raw materials needed for the item
 
 Composite
@@ -53,3 +58,6 @@ https://www.howtogeek.com/788342/what-is-thermoplastic-polyurethane-tpu/
 
 [^4]: Design life cycle. "Life cycle of a basketball" Raw Material Acquisition and Manufacturing,
 https://www.designlife-cycle.com/basketball
+
+[^5]: Amazon. "Structure of a basketball" IOTCD 29.5" Basketball Size 7 Faux Leather Ball for Indoor Outdoor Training and Match, MVP Design, Durable Butyl Inner Liner, Deep Channel Structure for Grip and Control, 
+https://www.amazon.com/IOTCD-Basketball-Moisture-Absorbing-Training/dp/B0B8DRCVQD
