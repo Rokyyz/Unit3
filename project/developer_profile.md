@@ -12,7 +12,7 @@ Karuizawa, Japan
 
 **Current Job**
 
-* Storage website development for Victor Daniel Rodas Barrio's company "Airborne Athletics"
+* Storage website development for Victor Daniel Rodas Barrio's company "**Airborne Athletics**"
 
 **Objective:**
 * As a dedicated and aspiring computer science student at UWC ISAK Japan, currently enrolled in the IB diploma program, I am eager to 
