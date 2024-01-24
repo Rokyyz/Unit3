@@ -15,7 +15,9 @@ Karuizawa, Japan
 * Storage website development for Victor Daniel Rodas Barrio's company "Airborne Athletics"
 
 **Objective:**
-As a dedicated and aspiring computer science student at UWC ISAK Japan, currently enrolled in the IB diploma program, I am eager to contribute my burgeoning skills in programming and problem-solving to your esteemed projects. With a focus on Python, I have successfully completed two practical projects that showcase my ability to create innovative solutions and work collaboratively in a team.
+* As a dedicated and aspiring computer science student at UWC ISAK Japan, currently enrolled in the IB diploma program, I am eager to 
+ contribute my burgeoning skills in programming and problem-solving to your esteemed projects. With a focus on Python, I have successfully  
+ completed two practical projects that showcase my ability to create innovative solutions and work collaboratively in a team.
 
 
 
