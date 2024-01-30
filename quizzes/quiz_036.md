@@ -4,7 +4,8 @@
 
 # 1. UML Diagram
 
-![CommSci 18](https://github.com/Rokyyz/Unit3/assets/134658259/1a70f00a-6b8b-4f6c-95d2-45b94e28e1e5)
+![CommSci 19](https://github.com/Rokyyz/Unit3/assets/134658259/ff4e4db3-2b2b-48d7-96cc-1c4c20ea2bbb)
+
 
 
 # 2. solutions
@@ -25,7 +26,7 @@ class Convert:
             1: 'I'
         }
 
-    def convert_to_roman(self, decimal) -> str:
+    def convert_to_roman(self, decimal:int) -> str:
         output = ""
         if 0 < decimal < 400:
             for key, value in self.roman_symbols.items():
