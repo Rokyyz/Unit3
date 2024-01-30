@@ -4,7 +4,7 @@
 
 # 1. UML Diagram
 
-![CommSci 23](https://github.com/Rokyyz/Unit3/assets/134658259/304e4428-3406-410e-aaa9-0e66b2c9ae76)
+![CommSci 25](https://github.com/Rokyyz/Unit3/assets/134658259/b0c90f56-1c70-4150-bece-e25bab756422)
 
 
 
@@ -13,50 +13,87 @@
 
 ```.py
 from kivymd.app import MDApp
-class quiz_040(MDApp):
+from kivy.core.window import Window
+from kivymd.uix.button import MDFlatButton
+
+class MyButton(MDFlatButton):
+    pass
+class quiz_041(MDApp):
     def build(self):
-
-        return
-
-    def button_pressed(self):
-        if self.root.ids.my_btn.text == 'Light mode':
-            self.root.ids.my_btn.text = 'Dark mode'
-            self.root.ids.my_btn.md_bg_color = [1, 1, 1, 1]  # White background
-            self.root.ids.my_btn.text_color = [0, 0, 0, 1]  # Black text color
-            self.root.ids.my_label.md_bg_color = [1, 1, 1, 1]  # White background
-            self.root.ids.my_label.color = [0, 0, 0, 1]  # Black text color
+        Window.size = (500, 500)
+        pass
+    def button_pressed(self, btn):
+        btn.md_bg_color = "white"
+        if self.root.ids.player_turn.text == "X player's turn":
+            btn.text = "X"
+            self.root.ids.player_turn.text = "Y player's turn"
         else:
-            self.root.ids.my_btn.text = 'Light mode'
-            self.root.ids.my_btn.md_bg_color = [0, 0, 0, 1]  # Black background
-            self.root.ids.my_btn.text_color = [1, 1, 1, 1]  # White text color
-            self.root.ids.my_label.md_bg_color = [0, 0, 0, 1]  # Black background
-            self.root.ids.my_label.color = [1, 1, 1, 1]  # White text color
+            self.root.ids.player_turn.text = "X player's turn"
+            btn.text = "O"
+            btn.md_bg_color = "purple"
 
 
-text = quiz_040()
-text.run()
+test = quiz_041()
+test.run()
+
 ```
 
 ```.kv
 Screen:
     size: 500, 500
-
-    MDLabel:
-        id:my_label
-        text: 'Roky'
-        font_size: "50pt"
-        halign: "center"
-        color: 'black'
+    MDBoxLayout:
+        size_hint: 0.8, 0.8
+        pos_hint: {"center_x":0.5, "center_y":0.5}
+        md_bg_color:"black"
+        orientation: "vertical"
 
 
-    MDRaisedButton:
-        id: my_btn
-        pos: 0,0
-        text: 'Dark mode'
-        md_bg_color: "black"
-        on_press:
-            app.button_pressed()
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, 0.25
+            md_bg_color:"white"
+
+
+            MDLabel:
+                id: player_turn
+                text: "X player's turn"
+                font_size: "30pt"
+                halign: "center"
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, 0.25
+            md_bg_color:"yellow"
+            MyButton:
+            MyButton:
+            MyButton:
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, 0.25
+            md_bg_color:"white"
+            MyButton:
+            MyButton:
+            MyButton:
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, 0.25
+            md_bg_color:"yellow"
+            MyButton:
+            MyButton:
+            MyButton:
+
+<MyButton>:
+    size_hint: 1, 1
+    color: "white"
+    md_bg_color:"grey"
+    font_size: "35pt"
+    on_press:
+        app.button_pressed(self)
 ```
 
 
 # 3. proof of work
+
+https://youtube.com/shorts/h-fr2mKFUd8?feature=share
