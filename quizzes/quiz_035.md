@@ -4,7 +4,7 @@
 
 # 1. UML Diagram
 
-
+N/A since no classes
 
 # 2. solutions
 
