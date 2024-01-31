@@ -21,4 +21,7 @@ get sucess criteria approved
 
 design er (entity relationship)
 
+**Hardware for proposal**
+
+**Software for proposal**
 
