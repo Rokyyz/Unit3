@@ -1,4 +1,6 @@
 # Criteria A: Planning
+![image](https://github.com/Rokyyz/Unit3/assets/134658259/3c97f3c4-5331-40dc-87a3-ed900b3e7f75) [^1]
+
 
 ## Problem definition (Client identification)
 My client owns a badminton racket company and plans to upgrade his store-running experience and his clients' shopping experience while shopping online. Since they have never had a preexisting online website they have faced **some consequences**: 
@@ -30,4 +32,5 @@ justification of tolls - python, SQLite, kivy
 6. The application offers a feature to filter customer searches on the online shop based on budget and materials
 
 
-  
+[^1]: [AEM. "Portable Weather Stations - AEM"  Portable Weather Stations,
+https://aem.eco/product/portable-weather-stations/ ](https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg)https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg 
