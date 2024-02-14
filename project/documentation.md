@@ -34,12 +34,12 @@ justification of tolls - python, SQLite, kivy
   **Design statement**
 
   ## Sucess criteria
-* Track money: orders, purchaces
-* Track of inventory, live update if decreases or increases
-* Machine to make the item/buy materials
-* login page - register, and existing accounts, encrypted password
-* Company and founder, material description
-* customer can enter bufget, depending on that the app shows what they can afford
+* The application offers a feature to track money: orders, purchases
+* The application offers a feature to keep track of inventory, and live update if decreases or increases
+* The application offers a machine to make the item/buy materials
+* The application offers a login page - register, existing accounts, encrypted password
+* The application offers a company and founder bio and material description
+* The application offers a feature to filter customer searches on the online shop based on budget and materials
 
 2 types of rackets, It its not recording when the client buys a racket and makes the transaction, should be seen and updated.
 racket customization, problem of confusing materials when customizing
