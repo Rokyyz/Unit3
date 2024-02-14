@@ -32,5 +32,5 @@ justification of tolls - python, SQLite, kivy
 6. The application offers a feature to filter customer searches on the online shop based on budget and materials
 
 
-[^1]: [AEM. "Portable Weather Stations - AEM"  Portable Weather Stations,
-https://aem.eco/product/portable-weather-stations/ ](https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg)https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg 
+[^1]: Dreamsite. "Badminton Smash Stock Photos, Images & Pictures" badminton smash,
+https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg
