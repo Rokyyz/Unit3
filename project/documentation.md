@@ -4,12 +4,13 @@
 
 ## Problem definition (Client identification)
 My client owns a badminton racket company and plans to upgrade his store-running experience and his clients' shopping experience while shopping online. Since they have never had a preexisting online website they have faced **some consequences**: 
- 
+
+* Disorganized financial departments, do not have space to keep track of the economic transactions of their shop, thus using primitive functions, more effort, work hours, unsafe, and unorganized.
 * Having problems overseeing the inventory of materials left for production, thus leading to future budget proposition problems
-* Clients complaining about the lack of information that they have regarding materials used
-* Clients are confused about what they can afford
-* Concerns about company security breaches
-* Complaints from clients wanting to know more about the company and its owner
+* Clients are confused about what they can afford and which materials they want in their rackets
+* Concerns about company security breaches, someone unauthorized logging in
+* Complaints from clients about the lack of information that they have regarding materials used as well as the company they trust in the production of them 
+* A need to find an easier alternative to buy or make materials needed for the production as it takes too long and is too complicated to go to another side
 (see evidence of consultation in Appendix A) 
 
 ## Design statement 
@@ -24,12 +25,12 @@ justification of tolls - python, SQLite, kivy
   **Design statement**
 
   ## Sucess criteria
-1. The application offers a feature to track money: orders, purchases
-2. The application offers a feature to keep track of inventory, and live update if it decreases or increases
-3. The application offers a machine to make the item/buy materials
-4. The application offers a login page - register, existing accounts, encrypted password
-5. The application offers a company and founder bio and material description
-6. The application offers a feature to filter customer searches on the online shop based on budget and materials
+1. The application offers a feature to track money: orders, purchases [Disorganized financial departments, do not have space to keep track of the economic transactions of their shop, thus using primitive functions, more effort, work hours, unsafe, and unorganized.]
+2. The application offers a feature to keep track of inventory, and live update if it decreases or increases [Having problems overseeing the inventory of materials left for production, thus leading to future budget proposition problems]
+3. The application offers a machine to make the item and buy materials [A need to find an easier alternative to buy or make materials needed for the production as it takes too long and is too complicated to go to another side]
+4. The application offers a login page - register, existing accounts, encrypted password [Concerns about company security breaches, someone unauthorized logging in] 
+5. The application offers a company and founder bio and material description [Clients complaining about the lack of information that they have regarding materials used as well as the company they trust in the production of them ]
+6. The application offers a feature to filter customer searches on the online shop based on budget and materials [Clients are confused about what they can afford and which materials they want in their rackets]
 
 
 [^1]: Dreamsite. "Badminton Smash Stock Photos, Images & Pictures" badminton smash,
