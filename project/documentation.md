@@ -7,9 +7,9 @@ My client owns a badminton racket company and plans to upgrade his store-running
 
 * Disorganized financial departments, do not have space to keep track of the economic transactions of their shop, thus using primitive functions, more effort, work hours, unsafe, and unorganized.
 * Having problems overseeing the inventory of materials left for production, thus leading to future budget proposition problems
-* Clients are confused about what they can afford and which materials they want in their rackets
+* Having problems seeing history records of orders, what they have ordered - materials and costs to better plan for future
 * Concerns about company security breaches, someone unauthorized logging in
-* Complaints from clients about the lack of information that they have regarding materials used as well as the company they trust in the production of them 
+* Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who was on factory grounds and who was not.
 * A need to find an easier alternative to buy or make materials needed for the production as it takes too long and is too complicated to go to another side
 (see evidence of consultation in Appendix A) 
 
@@ -29,8 +29,8 @@ justification of tolls - python, SQLite, kivy
 2. The application offers a feature to keep track of inventory, and live update if it decreases or increases (keeping track meaning that it is saved on a database and displayed to the owner on a separate GUI screen) [Issue tackled: "Having problems overseeing the inventory of materials left for production, thus leading to future budget proposition problems"]
 3. The application offers a machine to make the item and buy materials [Issue tackled: "A need to find an easier alternative to buy or make materials needed for the production as it takes too long and is too complicated to go to another side"]
 4. The application offers a login page - register, existing accounts, and encrypted password [Issue tackled: "Concerns about company security breaches, someone unauthorized logging in"] 
-5. The application offers a company and founder bio and material description [Issue tackled: "Clients complaining about the lack of information that they have regarding materials used as well as the company they trust in the production of them"]
-6. The application offers a feature to filter customer searches on the online shop based on budget and materials [Issue tackled: "Clients are confused about what they can afford and which materials they want in their rackets"]
+5. The application offers an overview of the workers on the factory ground displaying ID, name, description, status, and location [Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who is on factory grounds and who is not."]
+6. The application offers a feature to filter customer orders of the shop based on name and or ID, displaying materials and budget used [Issue tackled: "Having problems seeing history records of orders, what they have ordered - materials and costs to better plan for future"]
 
 
 [^1]: Dreamsite. "Badminton Smash Stock Photos, Images & Pictures" badminton smash,
