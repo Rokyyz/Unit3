@@ -1,7 +1,9 @@
-# Criteria A: Planning
+
+# Unit 3: Badminton racket economic transaction system
+
 ![image](https://github.com/Rokyyz/Unit3/assets/134658259/3c97f3c4-5331-40dc-87a3-ed900b3e7f75) [^1]
 
-
+# Criteria A: Planning
 ## Problem definition (Client identification)
 My client owns a badminton racket company and plans to upgrade his store-running experience and his clients' shopping experience while shopping online. Since they have never had a preexisting online website they have faced **some consequences**: 
 
