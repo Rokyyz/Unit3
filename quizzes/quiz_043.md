@@ -4,7 +4,7 @@
 # 1. solutions
 
 
-```.sqlite
+```.py
 SELECT COUNT(*) AS table_count
 FROM sqlite_master
 WHERE type='table';
