@@ -4,7 +4,7 @@
 
 # 1. UML Diagram
 
-
+<img width="341" alt="Screenshot 2024-02-18 at 18 10 04" src="https://github.com/Rokyyz/Unit3/assets/134658259/3acd3cbb-e48b-4787-b5b5-d4f27c0fe1c8">
 
 
 # 2. solutions
