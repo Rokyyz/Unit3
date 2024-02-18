@@ -1,5 +1,13 @@
+# Quiz047
 
 
+
+# 1. UML Diagram
+
+
+
+
+# 2. solutions
 ```.py
 from mon_8_jan.my_lib import DatabaseWorker, check_hash
 
@@ -20,3 +28,6 @@ for row in s:
 
 my_db.close()
 ```
+# 3. proof of work
+
+
