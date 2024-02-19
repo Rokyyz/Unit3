@@ -16,13 +16,16 @@ The problem resulting in the bankruptcy of the bank is related to incorrect bala
 
 Here's how you can answer the question:
 
-Client 12: The recorded balance was 4600, but it was supposed to be 5000.
-Client 13: The recorded balance was 2200, but it was supposed to be 1400.
-Client 15: The recorded balance was 2300, but it was supposed to be 1500.
-Client 17: The recorded balance was 2400, but it was supposed to be 1600.
-Client 19: The recorded balance was 2500, but it was supposed to be 1700.
+Client 12: The real balance was 4600, but bank records showed to be 5000. Mathew Martin
+Client 13: The real balance was 2200, but bank records showed to be 1400. Ashley Taylor
+Client 15: The real balance was 2300, but bank records showed to be 1500. Nicholas Lewis
+Client 17: The real balance was 2400, but bank records showed to be 1600. David Clark
+Client 19: The real balance was 2500, but bank records showedto be 1700. Daniel Green
 
-The problem seems to stem from discrepancies between the recorded balances and the actual balances. This type of error could lead to financial instability and ultimately contribute to the bankruptcy of the bank.
+
+The problem stems from discrepancies between the recorded balances and the actual balances. This type of error could lead to financial instability and ultimately contribute to the bankruptcy of the bank.
+
+Although the real thief is thought to be with ID 12 - Mathew Martin since the official bank records say that they have 5000 dollars although oficially they should have 4600. They lied about their balance and provided false information.
 
 ```.py
 
