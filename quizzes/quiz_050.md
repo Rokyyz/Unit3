@@ -34,4 +34,4 @@ print(second.get_duration(duration = first.duration,destination=first.destinatio
 
 3. Proof of work
 
-![Uploading Screenshot 2024-02-19 at 22.13.23.png…]()
+<img width="1440" alt="Screenshot 2024-02-19 at 22 13 57" src="https://github.com/Rokyyz/Unit3/assets/134658259/1da86abe-0a41-45cf-9687-4cf425323559">
