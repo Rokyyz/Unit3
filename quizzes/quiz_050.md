@@ -1,7 +1,8 @@
 ## quiz_050
 
-1. Diagram
+1. UML Diagram
 
+![CommSci 34](https://github.com/Rokyyz/Unit3/assets/134658259/d4e7f74d-f2ac-44bb-a570-c1bc40e4a95a)
 
 2. Solution
 
@@ -18,20 +19,22 @@ class Flights():
 
 
     def get_duration(self, duration,destination):
-        hours = duration[0]
-        minutes = duration[1]
-        seconds = duration[2]
-        return f"{hours} hours {minutes} minutes {seconds} seconds remaining for {destination}"
+        h = duration[0]
+        m = duration[1]
+        s = duration[2]
+        return f"to {destination} which lasts {h} hours {m} minutes {s} seconds"
 
-first = Flights(flight_number = "CA908", origin = "Madrid", destination = "Beijing International Airport", departure_time = "11.30 AM",duration = [10, 57, 12])
-second= Flights(flight_number = "IB64", origin = "Madrid", destination = "Bilbao Airport", departure_time = "8.30 AM",duration = [1, 40, 35])
+first = Flights(flight_number = "LV199", origin = "Riga", destination = "Dream Airport", departure_time = "5.00 AM",duration = [10, 57, 12])
+second= Flights(flight_number = "SU66", origin = "Osaka", destination = "Mocks International Airport", departure_time = "6.45 AM",duration = [1, 40, 35])
 
-print(first.get_duration(duration = second.duration,destination=second.destination))
+final1 = (first.get_duration(duration = second.duration,destination=second.destination))
+final2 = (second.get_duration(duration = first.duration,destination=first.destination))
 
-print(second.get_duration(duration = first.duration,destination=first.destination))
+print(f"Our airline offers a flight from ISAK {final1}")
+print(f"Our airline also offers a flight from ISAK {final2}")
 
 ```
 
 3. Proof of work
+<img width="1440" alt="Screenshot 2024-02-20 at 19 38 34" src="https://github.com/Rokyyz/Unit3/assets/134658259/b6110e1c-4555-4014-ace7-32ed57419296">
 
-<img width="1440" alt="Screenshot 2024-02-19 at 22 13 57" src="https://github.com/Rokyyz/Unit3/assets/134658259/1da86abe-0a41-45cf-9687-4cf425323559">
