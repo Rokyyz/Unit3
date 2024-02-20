@@ -370,7 +370,7 @@ MDScreen:
 
 # 3. proof of work
 
-
-
 https://github.com/Rokyyz/Unit3/assets/134658259/60188d5c-0807-4371-8d9b-11063ae2216c
+![Image 2024-02-20 at 21 11](https://github.com/Rokyyz/Unit3/assets/134658259/e18a527e-c477-4e67-b9d5-2d27d509cac7)
 
+<img width="854" alt="Screenshot 2024-02-20 at 21 11 55" src="https://github.com/Rokyyz/Unit3/assets/134658259/db371c31-f349-4215-8577-fffba0dc4cfc">
