@@ -1,7 +1,11 @@
 # Quiz043
 
+# 1. Diagram
 
-# 1. solutions
+![CommSci 37](https://github.com/Rokyyz/Unit3/assets/134658259/7249e01b-32d0-4fc1-999c-5274df8a112e)
+
+
+# 2. solutions
 
 
 ```.py
