@@ -1,11 +1,11 @@
 ## quiz_048
 
-1. ER Diagram
+# 1. ER Diagram
 
 ![CommSci 31](https://github.com/Rokyyz/Unit3/assets/134658259/b6d6f0d3-decd-435a-9ce6-d5344929e933)
 
 
-2. Solution
+# 2. Solution
 ```.py
 import sqlite3
 from passlib.hash import sha256_crypt
@@ -60,7 +60,7 @@ for row in result:
 print(f"total transferred {bitcoin_amount} BTC")
 ```
 
-3. Proof of work
+# 3. Proof of work
 
 <img width="1440" alt="Screenshot 2024-02-18 at 20 17 08" src="https://github.com/Rokyyz/Unit3/assets/134658259/5471ce41-d5e4-42cb-a1d0-750cd1ca2c88">
 
