@@ -1,6 +1,10 @@
 # Quiz047
 
-# 1. solutions
+# 1. ER Diagram
+
+![CommSci 31](https://github.com/Rokyyz/Unit3/assets/134658259/b6d6f0d3-decd-435a-9ce6-d5344929e933)
+
+# 2. solutions
 ```.py
 from mon_8_jan.my_lib import DatabaseWorker, check_hash
 
