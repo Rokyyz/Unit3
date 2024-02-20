@@ -20,12 +20,12 @@ Client 12: The real balance was 4600, but bank records showed to be 5000. Mathew
 Client 13: The real balance was 2200, but bank records showed to be 1400. Ashley Taylor
 Client 15: The real balance was 2300, but bank records showed to be 1500. Nicholas Lewis
 Client 17: The real balance was 2400, but bank records showed to be 1600. David Clark
-Client 19: The real balance was 2500, but bank records showedto be 1700. Daniel Green
+Client 19: The real balance was 2500, but bank records showed to be 1700. Daniel Green
 
 
 The problem stems from discrepancies between the recorded balances and the actual balances. This type of error could lead to financial instability and ultimately contribute to the bankruptcy of the bank.
 
-Although the real thief is thought to be with ID 12 - Mathew Martin since the official bank records say that they have 5000 dollars although oficially they should have 4600. They lied about their balance and provided false information.
+**Although the real thief is thought to be with ID 12 - Mathew Martin since the official bank records say that they have 5000 dollars although officially they should have 4600. They lied about their balance and provided false information. They indicated that they have more money than they actually do (+$400), so they get free 400 dollars for nothing **
 
 ```.py
 
