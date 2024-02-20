@@ -4,8 +4,8 @@
 
 # 1. UML Diagram
 
+![CommSci 36](https://github.com/Rokyyz/Unit3/assets/134658259/ccfc0adf-4df0-401c-9e66-822816b129c3)
 
-![CommSci 33](https://github.com/Rokyyz/Unit3/assets/134658259/20b501b9-75cb-4227-87a4-723180f26c12)
 
 
 # 2. solutions
