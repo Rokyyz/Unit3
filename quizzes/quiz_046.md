@@ -6,6 +6,7 @@
 
 ![CommSci 38](https://github.com/Rokyyz/Unit3/assets/134658259/1b9bf366-7cab-4022-b79c-7645317a2a79)
 
+![CommSci 39](https://github.com/Rokyyz/Unit3/assets/134658259/6c631a71-7415-4c4b-8674-0852ae55850e)
 
 
 # 2. solutions
