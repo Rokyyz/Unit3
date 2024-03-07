@@ -37,12 +37,30 @@ justification of tolls - python, SQLite, kivy
   **Design statement**
 
   ## Sucess criteria
-1. The application offers a feature to track money (tracking meaning that these transactions would be registered and safely saved in a database): orders, purchases [**Issue tackled: "Disorganized financial departments, do not have space to keep track of the economic transactions of their shop, thus using primitive functions, more effort, work hours, unsafe, and unorganized."**]
-2. The application offers a feature to keep track of inventory (keeping track meaning that it is saved on a database and displayed to the owner on a separate GUI screen) [**Issue tackled: "Having problems overseeing the inventory of materials left for production, thus leading to future budget proposition problems"**]
-3. The application offers a machine that allows the user to create an item, thus altering the inventory [Issue tackled: "A need to find an easier alternative to buy or make materials needed for the production as it takes too long and is too complicated to go to another side"]
-4. The application offers a login page - register new accounts, and existing accounts [**Issue tackled: "Concerns about company security breaches, someone unauthorized logging in"**] 
-5. The application offers an overview of the workers on the factory ground displaying ID, name, description, status, and location [**Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who is on factory grounds and who is not."**]
-6. The application offers a feature to filter customer orders of the shop based on name and or ID, displaying materials and budget used [**Issue tackled: "Having problems seeing history records of orders, what they have ordered - materials and costs to better plan for future"**]
+1. The application offers a feature to track money (tracking meaning that these transactions would be registered and safely saved in a database): orders, purchases.
+
+
+- [**Issue tackled: "Disorganized financial departments, do not have space to keep track of the economic transactions of their shop, thus using primitive functions, more effort, work hours, unsafe, and unorganized."**]
+  
+2. The application offers a feature to keep track of inventory (keeping track meaning that it is saved on a database and displayed to the owner on a separate GUI screen)
+
+ - [**Issue tackled: "Having problems overseeing the inventory of materials left for production, thus leading to future budget proposition problems"**]
+   
+3. The application offers a machine that allows the user to create an item, thus altering the inventory
+
+- [Issue tackled: "A need to find an easier alternative to buy or make materials needed for the production as it takes too long and is too complicated to go to another side"]
+  
+4. The application offers a login page - register new accounts, and existing accounts
+
+- [**Issue tackled: "Concerns about company security breaches, someone unauthorized logging in"**]
+  
+5. The application offers an overview of the workers on the factory ground displaying ID, name, description, status, and location
+
+- [**Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who is on factory grounds and who is not."**]
+  
+6. The application offers a feature to filter customer orders of the shop based on name and or ID, displaying materials and budget used
+
+- [**Issue tackled: "Having problems seeing history records of orders, what they have ordered - materials and costs to better plan for future"**]
 
 
 [^1]: Dreamsite. "Badminton Smash Stock Photos, Images & Pictures" badminton smash,
