@@ -62,5 +62,9 @@ justification of tolls - python, SQLite, kivy
 - [**Issue tackled: "As the factory grew bigger whenever the owner wanted some help or give a task to a worker, he had to call them by phone or walk to them, now they won't need to do that since the worker will be able to look in the table and see"**]
 
 
+3 flow charts - easy, medium hard difficulty code
+4-5 code fragment explenations, 1 for each criteria
+
+
 [^1]: Dreamsite. "Badminton Smash Stock Photos, Images & Pictures" badminton smash,
 https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg
