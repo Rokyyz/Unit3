@@ -45,7 +45,7 @@ justification of tolls - python, SQLite, kivy
 
  - [**Issue tackled: "Having problems overseeing the inventory of materials left for production, thus leading to future budget proposition problems"**]
    
-3. The application offers a machine that allows the user to create an order and record the activity in a data table.
+3. The application offers a virtual machine that allows the user to create an order and record the activity in a data table.
 
 - [Issue tackled: "A need to find an easier alternative to place an order for the shop and thus start the production for it swiftly"]
   
@@ -57,7 +57,7 @@ justification of tolls - python, SQLite, kivy
 
 - [**Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who is on factory grounds and who is not."**]
   
-6. The application offers a feature to add a message to any worker who is on the grounds of the factory
+6. The application provides a table to see message given to any worker as well as their 
 
 - [**Issue tackled: "As the factory grew bigger whenever the owner wanted some help or give a task to a worker, he had to call them by phone or walk to them, now they won't need to do that since the worker will be able to look in the table and see"**]
 
