@@ -1,8 +1,7 @@
 
 # Unit 3: "Airborne athletics" badminton shop center
 
-![image](https://github.com/Rokyyz/Unit3/assets/134658259/8c89cf4d-453e-4023-8948-861f579cdafe)
-[^1]
+![image](https://github.com/Rokyyz/Unit3/assets/134658259/8c89cf4d-453e-4023-8948-861f579cdafe) [^1]
 
 # Criteria A: Planning
 ## Problem definition (Client identification)
@@ -67,5 +66,7 @@ justification of tolls - python, SQLite, kivy
 4-5 code fragment explenations, 1 for each criteria
 
 
-[^1]: Dreamsite. "Badminton Smash Stock Photos, Images & Pictures" badminton smash,
-https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg
+[^1]: Badminton racket review. "Latest Racket Reviews in the E-zone" How to choose a badminton racket?,
+[https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbadmintonracketreview.com%2F&psig=AOvVaw2rEdTJQZrQ3b7EnWwVMIya&ust=1710081477001000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiFi46054QDFQAAAAAdAAAAABAE)https://www.google.com/url?sa=i&url=https%3A%2F%2Fbadmintonracketreview.com%2F&psig=AOvVaw2rEdTJQZrQ3b7EnWwVMIya&ust=1710081477001000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiFi46054QDFQAAAAAdAAAAABAE
+
+[^2]: 
