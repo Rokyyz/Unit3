@@ -65,6 +65,18 @@ justification of tolls - python, SQLite, kivy
 3 flow charts - easy, medium hard difficulty code
 4-5 code fragment explenations, 1 for each criteria
 
+# Appendix
+## Evidence of consultation
+### Client approval of proposed success criteria
+
+<img width="857" alt="Screenshot 2024-03-10 at 00 05 51" src="https://github.com/Rokyyz/Unit3/assets/134658259/9525e522-a8d3-474a-bc03-81f57250b140">
+
+### Client's review of the application during the development process
+
+
+
+### Client's review of final product
+
 
 [^1]: Badminton racket review. "Latest Racket Reviews in the E-zone" How to choose a badminton racket?,
 [https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbadmintonracketreview.com%2F&psig=AOvVaw2rEdTJQZrQ3b7EnWwVMIya&ust=1710081477001000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiFi46054QDFQAAAAAdAAAAABAE)https://www.google.com/url?sa=i&url=https%3A%2F%2Fbadmintonracketreview.com%2F&psig=AOvVaw2rEdTJQZrQ3b7EnWwVMIya&ust=1710081477001000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiFi46054QDFQAAAAAdAAAAABAE
