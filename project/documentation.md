@@ -1,7 +1,8 @@
 
-# Unit 3: Badminton racket economic transaction system
+# Unit 3: "Airborne athletics" badminton shop center
 
-![image](https://github.com/Rokyyz/Unit3/assets/134658259/3c97f3c4-5331-40dc-87a3-ed900b3e7f75) [^1]
+![image](https://github.com/Rokyyz/Unit3/assets/134658259/8c89cf4d-453e-4023-8948-861f579cdafe)
+[^1]
 
 # Criteria A: Planning
 ## Problem definition (Client identification)
@@ -55,11 +56,11 @@ justification of tolls - python, SQLite, kivy
   
 5. The application offers an overview of the workers on the factory ground displaying ID, name, description, status, location, and message
 
-- [**Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who is on factory grounds and who is not."**]
+- [**Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who is on factory grounds and who is not as well as the issue of informing the workers of the tasks they need to execute."**]
   
-6. The application provides a table to see message given to any worker as well as their 
+6. The application provides a table to see messages given to any worker and their status, description, and name.
 
-- [**Issue tackled: "As the factory grew bigger whenever the owner wanted some help or give a task to a worker, he had to call them by phone or walk to them, now they won't need to do that since the worker will be able to look in the table and see"**]
+- [**Issue tackled: "As the factory grew bigger whenever the owner wanted some help or give a task to a worker, he had to call them by phone or walk to them and see them in person. Also because of company growth more and more workers were hired making the owner have difficulties in differentiating different workers."**]
 
 
 3 flow charts - easy, medium hard difficulty code
