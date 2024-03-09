@@ -69,6 +69,9 @@ justification of tolls - python, SQLite, kivy
 
 ## System Diagram
 
+<img width="877" alt="Screenshot 2024-03-10 at 02 47 53" src="https://github.com/Rokyyz/Unit3/assets/134658259/f21b5b18-d7d6-44d3-9af6-7b82e2654a44">
+
+
 ## Wireframe Diagram
 
 ## ER Diagram
