@@ -34,8 +34,6 @@ I decided to use KivyMD for the application interface itself as it is both easy 
 - general solution - "GUI" that is connected to the database
 justification of tolls - python, SQLite, kivy
 
-  **Design statement**
-
   ## Sucess criteria
 1. The application offers a feature to track money (tracking meaning that these transactions would be registered and safely saved in a database): orders, and purchases.
 
@@ -65,18 +63,90 @@ justification of tolls - python, SQLite, kivy
 3 flow charts - easy, medium hard difficulty code
 4-5 code fragment explenations, 1 for each criteria
 
-# Appendix
-## Evidence of consultation
-### Client approval of proposed success criteria
 
-<img width="857" alt="Screenshot 2024-03-10 at 00 05 51" src="https://github.com/Rokyyz/Unit3/assets/134658259/9525e522-a8d3-474a-bc03-81f57250b140">
-
-### Client's review of the application during the development process
+# Criteria B: Design
 
 
+## System Diagram
 
-### Client's review of final product
+## Wireframe Diagram
 
+## ER Diagram
+
+## UML Diagram
+
+## Flow Diagrams
+
+## Test Plan
+
+## Record of Tasks
+
+# Criteria C: Development
+
+## Techniques Used
+
+1. Object Oriented Programming (OOP): Classes, Inheritance
+2. SQLite Database
+3. Variables
+4. For loops
+5. If statements
+6. Plotting graphs
+7. Functions
+
+## Computational thinking
+1. decomposition
+2. pattern recognition
+3. abstraction
+4. algorithm design
+
+## Development of User Interface Using KivyMD
+
+### Screen Manager
+
+### General Application Screen
+
+### MDFillRoundFlatIconButton
+
+### MDLabel
+
+### MDTextField
+
+### MDCheckbox
+
+
+## Development of Application Using Python
+
+## Database worker
+
+### Accessing Information Inside of the Database
+
+## Login System
+
+### User Credential Verification
+
+### Pop Up Message
+
+## Add Orders System
+
+### Missing Value Validation
+
+### Time Picker
+
+### Date Picker
+
+### Checkboxes
+
+### Insert Query
+
+
+
+
+
+
+# Criteria D: Functionality
+## Video Showcasing the Functionality of the Application
+
+# Citations
 
 [^1]: Badminton racket review. "Latest Racket Reviews in the E-zone" How to choose a badminton racket?,
 [https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbadmintonracketreview.com%2F&psig=AOvVaw2rEdTJQZrQ3b7EnWwVMIya&ust=1710081477001000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiFi46054QDFQAAAAAdAAAAABAE)https://www.google.com/url?sa=i&url=https%3A%2F%2Fbadmintonracketreview.com%2F&psig=AOvVaw2rEdTJQZrQ3b7EnWwVMIya&ust=1710081477001000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiFi46054QDFQAAAAAdAAAAABAE
@@ -96,3 +166,18 @@ justification of tolls - python, SQLite, kivy
 [^8]: Yegulalp, Serdar. "Why You Should Use SQLite." InfoWorld, IDG Communications, Inc., 13 Feb. 2019, https://www.infoworld.com/article/3331923/why-you-should-use-sqlite.html. Accessed Feburary 10, 2023
 
 [^9]: "SQLite Advantages and Disadvantages." javatpoint, n.d., https://www.javatpoint.com/sqlite-advantages-and-disadvantages. Accessed Feburary 10, 2023
+
+
+
+
+# Appendix
+## Evidence of consultation
+### Client approval of proposed success criteria
+
+<img width="857" alt="Screenshot 2024-03-10 at 00 05 51" src="https://github.com/Rokyyz/Unit3/assets/134658259/9525e522-a8d3-474a-bc03-81f57250b140">
+
+### Client's review of the application during the development process
+
+
+
+### Client's review of final product
