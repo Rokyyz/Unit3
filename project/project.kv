@@ -1,0 +1,817 @@
+ScreenManager:
+    LoginScreen:
+        name: "LoginScreen"
+
+    SignupScreen:
+        name: "SignupScreen"
+
+    MenuScreen:
+        name: "MenuScreen"
+
+    InventoryScreen:
+        name: "InventoryScreen"
+
+    TransactionsScreen:
+        name: "TransactionsScreen"
+
+    WorkersScreen:
+        name: "WorkersScreen"
+
+    OrdersForWorkersScreen:
+        name: "OrdersForWorkersScreen"
+
+    AddOrdersScreen
+        name: "AddOrdersScreen"
+
+
+    SeeOrdersScreen
+        name:"SeeOrdersScreen"
+
+
+<LoginScreen>:
+    canvas.before:
+        Rectangle:
+            source: "bad.jpeg"
+            size: self.size
+            pos: self.pos
+
+    BoxLayout:
+        orientation: 'vertical'
+        margin: 'sdp50'
+
+        MDLabel:
+            text: "Welcome to Airborne Rackets"
+            font_name: 'Copyduck.ttf'
+            font_size: '30pt'
+            bold: True
+            color: 'black'
+            pos_hint:{"center_x":.75, "center_y":.2}
+            theme_text_color: 'Custom'
+            text_color: 0,0,0,1
+            halign: 'center'
+
+    MDCard:
+        size_hint: .35, .8
+        elevation: 2
+        orientation: "vertical"
+        pos_hint: {"center_x": .3, "center_y": .5}
+        padding: dp(50)
+        md_bg_color: [0,0,0,0.5]
+
+        MDLabel:
+            text: "Login"
+            font_name: 'Donsky.ttf'
+            color: 'white'
+            font_size: '50pt'
+            bold: True
+            size_hint: 1, .2
+            halign: "center"
+            pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDTextField:
+            id: uname
+            hint_text: "Enter your username"
+            icon_left: "email"
+
+        MDTextField:
+            id: passwd
+            hint_text: "Enter your password"
+            icon_left: "key"
+            password: True
+
+
+        MDTextField:
+            id: c_log_passwd
+            hint_text: "Re-enter password"
+            icon_left: "key"
+            password: True
+            helper_text_mode: "on_error"
+            helper_text: "Incorrect password, try again"
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            MDRaisedButton:
+                id: login
+                text: "Login"
+                on_press: root.try_login()
+                size_hint: .4, .5
+                md_bg_color: "#ca2c92"
+
+            MDLabel:
+                size_hint: .3, 1
+
+            MDRaisedButton:
+                id: signup
+                text: "Signup"
+                font_name: 'Arial'
+                on_press: root.try_register()
+                size_hint: .4, .5
+                md_bg_color: "#fccb06"
+
+        MDBoxLayout:
+            orientation: "horizontal"        # set the orientation of the box to horizontal
+            size_hint: 1, None              # set the width to 100% and the height to None
+            height: dp(40)                  # set the height of the box to 40 density-independent pixels (dp)
+
+            MDCheckbox:                      # create a Material Design checkbox
+                id: show_pass                # set an id for the checkbox
+                size_hint_x: 0.1             # set the width of the checkbox to 10% of the box's width
+                on_active: passwd.password = not self.active  # set the password field to show/hide based on the checkbox's active state
+                on_active: c_log_passwd.password = not self.active
+                active: False                # set the initial state of the checkbox to False (unchecked)
+
+            MDIconButton:
+                icon: "eye"
+                size_hint_x: 0.08
+#
+
+            MDLabel:                         # create a Material Design label
+                text: "Show password"        # set the text of the label
+                font_size: 25                # set the font size of the label
+                size_hint_x: 0.7             # set the width of the label to 70% of the box's width
+
+
+<SignupScreen>:
+    size: 500, 500
+    canvas.before:
+        Rectangle:
+            source: "badminton-background-dqn50jtswzsszbwf.jpg"
+            size: self.size
+            pos: self.pos
+
+    MDCard:
+        size_hint: .5, .9
+        elevation: 2
+        orientation: "vertical"
+        pos_hint: {"center_x": .5, "center_y": .5}
+        padding: dp(50)
+        md_bg_color: [0,0,0,0.5]
+
+        MDLabel:
+            text: "Signup"
+            font_name: 'Donsky.ttf'
+            font_size: '80pt'
+            size_hint: 1, .2
+            halign: "center"
+            pos_hint: {"center_x": .5, "center_y": .5}
+            font_size: '30pt'
+            bold: True
+
+        MDTextField:
+            id: uname
+            hint_text: "Enter username"
+            icon_left: "account"
+
+        MDTextField:
+            id: e_passwd
+            hint_text: "Enter password"
+            icon_left: "key"
+            password: True
+
+        MDTextField:
+            id: c_passwd
+            hint_text: "Confirm password"
+            icon_left: "key"
+            password: True
+
+            helper_text_mode: "on_error"
+            helper_text: "Passwords don't match"
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, None
+            height: dp(40)
+
+            MDCheckbox:
+                id: show_pass
+                size_hint_x: 0.1
+                on_active: e_passwd.password = not self.active
+                on_active: c_passwd.password = not self.active
+                active: False
+
+            MDIconButton:
+                icon: "eye"
+                size_hint_x: 0.04
+
+            MDLabel:
+                text: "Show password"
+                font_size: 25
+                size_hint_x: 0.7
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            MDRaisedButton:
+                id: signup_signup
+                text: "Cancel"
+                on_press: root.try_cancel()
+                size_hint: .2, .45
+                md_bg_color: "#ca2c92"
+
+            MDLabel:
+                size_hint: .3, 1
+
+            MDRaisedButton:
+                id: signup
+                text: "Submit"
+                on_press: root.try_register()
+                size_hint: .2, .45
+
+<MDRaisedButton@MDRaisedButton>:
+    canvas.before:
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [20,]
+            source: "square.png"
+<MenuScreen>:
+    FitImage:
+        size_hint: 1, 1
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        source: "Company_Logo_final.jpeg"
+#        source: "ani.jpg"
+
+    FloatLayout:
+        Label:
+            text: "Menu Screen"
+            font_size: "40sp"
+            size_hint: None, None
+            size: self.texture_size
+            pos_hint: {'top': 1, 'center_x': .5}
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: .3, .6
+            pos_hint: {"center_x": .85, "center_y": .65}
+            spacing: "20dp"
+            padding: "20dp"
+            elevation: 10
+            md_bg_color: [1, 1, 1, 0.3]
+
+
+            MDFillRoundFlatIconButton:
+                id: menu_add_order
+                size_hint: 1, None
+                size_hint_y: None
+                height: "100dp"
+                icon: 'plus-circle'
+                text: "Add order"
+                font_size: "20sp"
+                on_press: root.go_to_add_orders()
+
+
+                elevation_normal: 5
+                md_bg_color: [0.5, 0.5, 0.5, 0.8]
+                ripple_color: [1, 1, 0, 0.7]
+                text_color: [1, 1, 1, 1]
+
+            MDFillRoundFlatIconButton:
+                id: menu_inventory
+                size_hint: 1, None
+                size_hint_y: None
+                height: "100dp"
+                icon: "library-shelves"
+                text: "Inventory"
+                font_size: "20sp"
+                on_press: root.go_to_inventory()
+
+
+                elevation_normal: 5
+                md_bg_color: [0.5, 0.5, 0.5, 0.8]
+                ripple_color: [1, 1, 0, 0.7]
+                text_color: [1, 1, 1, 1]
+
+            MDFillRoundFlatIconButton:
+                id: menu_see_orders
+                size_hint: 1, None
+                size_hint_y: None
+                height: "100dp"
+                icon: "shopping"
+                text: "See Orders"
+                font_size: "20sp"
+                on_press: root.go_to_see_orders()
+
+
+                elevation_normal: 5
+                md_bg_color: [0.5, 0.5, 0.5, 0.8]
+                ripple_color: [1, 1, 0, 0.7]
+                text_color: [1, 1, 1, 1]
+
+            MDFillRoundFlatIconButton:
+                id: menu_transactions
+                size_hint: 1, None
+                size_hint_y: None
+                height: "100dp"
+                icon: "barcode-scan"
+                text: "Transactions"
+                font_size: "20sp"
+                on_press: root.go_to_transactions()
+
+
+                elevation_normal: 5
+                md_bg_color: [0.5, 0.5, 0.5, 0.8]
+                ripple_color: [1, 1, 0, 0.7]
+                text_color: [1, 1, 1, 1]
+
+            MDFillRoundFlatIconButton:
+                id: menu_workers
+                size_hint: 1, None
+                size_hint_y: None
+                height: "100dp"
+                text: "Workers"
+                icon: "account-tie"
+                font_size: "20sp"
+                on_press: root.go_to_workers()
+
+
+                elevation_normal: 5
+                md_bg_color: [0.5, 0.5, 0.5, 0.8]
+                ripple_color: [1, 1, 0, 0.7]
+                text_color: [1, 1, 1, 1]
+
+
+
+            MDFillRoundFlatIconButton:
+                id: menu_orders_for_workers
+                size_hint: 1, None
+                size_hint_y: None
+                height: "100dp"
+                icon: "message-alert"
+                text: "Orders for workers"
+                font_size: "20sp"
+                on_press: root.go_to_orders_for_workers()
+
+                elevation_normal: 5
+                md_bg_color: [0.5, 0.5, 0.5, 0.8]
+                ripple_color: [1, 1, 0, 0.7]
+                text_color: [1, 1, 1, 1]
+
+            MDFillRoundFlatIconButton:
+                id: menu_logout
+                size_hint: 1, None
+                size_hint_y: None
+                height: "100dp"
+                text: "Logout"
+                icon: "logout"
+                font_size: "20sp"
+                on_press: root.try_logout()
+
+                elevation_normal: 5
+                md_bg_color: [0.5, 0.5, 0.5, 0.8]
+                ripple_color: [1, 1, 0, 0.7]
+                text_color: [1, 1, 1, 1]
+<WorkersScreen>:
+    id: real_workers
+    name: "WorkersScreen"
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "See worker info"
+            size_hint_y: None
+            height: "48dp"
+            font_size: "24sp"
+            bold: True
+            color: app.theme_cls.primary_color
+            canvas.before:
+                Color:
+                    rgba: app.theme_cls.bg_normal
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+        FloatLayout:
+            MDIconButton:
+                icon: "delete"
+                pos_hint: {"right": 0.80, "top": 0.95}
+                on_release: root.delete()
+
+        ScrollView:
+            do_scroll_x: False
+            GridLayout:
+                id: data_table
+                cols: 8
+                size_hint_y: None
+                height: self.minimum_height
+                padding: dp(10)
+                spacing: dp(10)
+
+        MDFloatingActionButton:
+            icon: "refresh"
+            pos_hint: {"right": 0.99, "top": 1}
+            on_release: root.update()
+
+        MDRaisedButton:
+            text: "Back to Menu"
+            on_press: root.manager.current = "MenuScreen"
+
+<TransactionsScreen>:
+    id: real_transactions
+    name: 'TransactionsScreen'
+    data_table: data_table
+
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "See transactions"
+            size_hint_y: None
+            height: "48dp"
+            font_size: "24sp"
+            bold: True
+            color: app.theme_cls.primary_color
+            canvas.before:
+                Color:
+                    rgba: app.theme_cls.bg_normal
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+        FloatLayout:
+            MDIconButton:
+                icon: "delete"
+                pos_hint: {"right": 0.80, "top": 0.95}
+                on_release: root.delete()
+
+        ScrollView:
+            do_scroll_x: False
+            GridLayout:
+                id: data_table
+                cols: 8
+                size_hint_y: None
+                height: self.minimum_height
+                padding: dp(10)
+                spacing: dp(10)
+
+        MDFloatingActionButton:
+            icon: "refresh"
+            pos_hint: {"right": 0.99, "top": 1}
+            on_release: root.update()
+
+        MDRaisedButton:
+            text: "Back to Menu"
+            on_press: root.manager.current = "MenuScreen"
+
+
+<InventoryScreen>:
+    id: real_inventory
+    name: "Inventory"
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint: 1, 1
+
+#        Navigation:
+#            size_hint: 0.1, 1
+
+        MDBoxLayout:
+            size_hint: 0.9, 1
+            orientation: 'vertical'
+            spacing: 20
+            padding: 50
+
+            MDLabel:  #I want padding for the bottom of the cards
+                text: "Inventory Manager"
+                font_style: "H3"
+                halign: "left"
+                pos_hint: {'center_x': 0.51, 'center_y': 1}
+                size_hint: 1, 0.1
+
+            MDBoxLayout:
+                size_hint: 1, 0.9
+                orientation: 'horizontal'
+                spacing: 20
+                pos_hint: {'center_x':0.5, 'center_y':0.5}
+
+                MDBoxLayout:
+                    size_hint: 0.3, 1
+                    orientation: 'vertical'
+                    spacing: 20
+
+                    MDCard:
+                        MDRelativeLayout:
+                            FitImage:
+                                source: "carbon_fiber.jpeg"
+                                pos_hint: {"top": 1}
+                                radius: (dp(16), dp(16), dp(16), dp(16))
+
+                            MDIconButton:
+                                icon: "plus"
+                                pos_hint: {"top": 0.98, "right": 0.98}
+                                md_bg_color: "white"
+                                icon_size: 70
+                                on_press: root.purchase_popup("carbon_fiber")
+
+                            MDLabel:
+                                text: "Carbon fiber"
+                                theme_text_color: "Custom"
+                                text_color: "white"
+                                font_size: 50
+                                adaptive_size: True
+                                pos: "15dp", "15dp"
+                                bold: True
+
+                MDBoxLayout:
+                    size_hint: 0.3, 1
+                    orientation: 'vertical'
+                    spacing: 20
+
+                    MDCard:
+                        MDRelativeLayout:
+                            FitImage:
+                                source: "graphite.jpeg"
+                                pos_hint: {"top": 1}
+                                radius: (dp(16), dp(16), dp(16), dp(16))
+
+                            MDIconButton:
+                                icon: "plus"
+                                pos_hint: {"top": 0.98, "right": 0.98}
+                                md_bg_color: "white"
+                                icon_size: 70
+                                on_press: root.purchase_popup("graphite")
+
+                            MDLabel:
+                                text: "Graphite"
+                                font_size: 50
+                                theme_text_color: "Custom"
+                                text_color: "white"
+                                adaptive_size: True
+                                pos: "15dp", "15dp"
+                                bold: True
+
+                MDBoxLayout:
+                    size_hint: 0.3, 1
+                    orientation: 'vertical'
+                    spacing: 20
+
+                    MDCard:
+                        MDRelativeLayout:
+                            FitImage:
+                                source: "wolfram.jpeg"
+                                pos_hint: {"top": 1}
+                                radius: (dp(16), dp(16), dp(16), dp(16))
+
+                            MDIconButton:
+                                icon: "plus"
+                                pos_hint: {"top": 0.98, "right": 0.98}
+                                md_bg_color: "white"
+                                icon_size: 70
+                                on_press: root.purchase_popup("wolfram")
+
+                            MDLabel:
+                                text: "Wolfram"
+                                font_size: 50
+                                theme_text_color: "Custom"
+                                text_color: "white"
+                                adaptive_size: True
+                                pos: "15dp", "15dp"
+                                bold: True
+
+                MDBoxLayout:
+                    size_hint: 0.3, 1
+                    orientation: 'vertical'
+                    spacing: 20
+
+                    MDCard:
+                        MDRelativeLayout:
+                            FitImage:
+                                source: "aluminum.jpeg"
+                                pos_hint: {"top": 1}
+                                radius: (dp(16), dp(16), dp(16), dp(16))
+
+                            MDIconButton:
+                                icon: "plus"
+                                pos_hint: {"top": 0.98, "right": 0.98}
+                                md_bg_color: "white"
+                                icon_size: 70
+                                on_press: root.purchase_popup("aluminum")
+
+                            MDLabel:
+                                text: "Aluminum"
+                                font_size: 50
+                                theme_text_color: "Custom"
+                                text_color: "white"
+                                adaptive_size: True
+                                pos: "15dp", "15dp"
+                                bold: True
+
+                MDBoxLayout:
+                    size_hint: 0.3, 1
+                    orientation: 'vertical'
+                    spacing: 20
+
+                    MDCard:
+                        MDRelativeLayout:
+                            FitImage:
+                                source: "titanium.jpeg"
+                                pos_hint: {"top": 1}
+                                radius: (dp(16), dp(16), dp(16), dp(16))
+
+                            MDIconButton:
+                                icon: "plus"
+                                pos_hint: {"top": 0.98, "right": 0.98}
+                                md_bg_color: "white"
+                                icon_size: 70
+                                on_press: root.purchase_popup("titanium")
+
+                            MDLabel:
+                                text: "Titanium"
+                                font_size: 50
+                                theme_text_color: "Custom"
+                                text_color: "white"
+                                adaptive_size: True
+                                pos: "15dp", "15dp"
+                                bold: True
+
+                MDBoxLayout:
+                    size_hint: 0.3, 1
+                    orientation: 'vertical'
+                    spacing: 20
+
+                    MDCard:
+                        MDRelativeLayout:
+                            FitImage:
+                                source: "nanocarbon.jpeg"
+                                pos_hint: {"top": 1}
+                                radius: (dp(16), dp(16), dp(16), dp(16))
+
+                            MDIconButton:
+                                icon: "plus"
+                                pos_hint: {"top": 0.98, "right": 0.98}
+                                md_bg_color: "white"
+                                icon_size: 70
+                                on_press: root.purchase_popup("nanocarbon")
+
+                            MDLabel:
+                                text: "Nanocarbon"
+                                font_size: 50
+                                theme_text_color: "Custom"
+                                text_color: "white"
+                                adaptive_size: True
+                                pos: "15dp", "15dp"
+                                bold: True
+
+        MDRaisedButton:
+            text: "Back to Menu"
+            on_press: root.manager.current = "MenuScreen"
+
+<OrdersForWorkersScreen>:
+    id: real_orders
+    name: "OrdersForWorkersScreen"
+    BoxLayout:
+        orientation: 'vertical'
+
+        MDLabel:
+            text: "Worker Name"
+        MDTextField:
+            id: workername
+
+        MDLabel:
+            text: "Description"
+        MDTextField:
+            id: description
+
+        MDLabel:
+            text: "status"
+        MDCheckbox:
+            id: off_factory
+            group: 'status'
+            on_active: root.select_status_type(self, 'off')
+        Label:
+            text: 'Off of factory grounds'
+        MDCheckbox:
+            id: on_factory
+            group: 'status'
+            on_active: root.select_status_type(self, 'on')
+        Label:
+            text: 'On factory grounds'
+
+        MDLabel:
+            text: "message"
+        MDTextField:
+            id: message
+
+        MDRaisedButton:
+            text: "Add Order"
+            on_press: root.add_order()
+
+        MDRaisedButton:
+            text: "Back to Menu"
+            on_press: root.manager.current = "MenuScreen"
+
+<AddOrdersScreen>:
+    id: real_add_orders
+    name: "AddOrdersScreen"
+    MDBoxLayout:
+        orientation: 'vertical'
+        size_hint: 0.8, .8
+        pos_hint: {'center_x':0.5, 'center_y':0.5,}
+
+        MDLabel:
+            text: "Customer Name"
+        MDTextField:
+            id: customer_name
+
+        MDLabel:
+            text: "Order Date"
+        MDTextField:
+            id: date
+            readonly: True
+            on_focus: if self.focus: root.date()
+
+        MDLabel:
+            text: "Order Time"
+        MDTextField:
+            id: order_time
+            readonly: True
+            on_focus: if self.focus: root.show_time_picker()
+
+        MDLabel:
+            text: "Racket Type"
+        MDCheckbox:
+            id: head_heavy
+            group: 'racket_type'
+            on_active: root.select_racket_type(self, 'Head Heavy')
+        Label:
+            text: 'Head Heavy'
+        MDCheckbox:
+            id: even_balance
+            group: 'racket_type'
+            on_active: root.select_racket_type(self, 'Even Balance')
+        Label:
+            text: 'Even Balance'
+        MDCheckbox:
+            id: head_light
+            group: 'racket_type'
+            on_active: root.select_racket_type(self, 'Head Light')
+        Label:
+            text: 'Head Light'
+
+        MDRaisedButton:
+            text: "Add Order"
+            on_press: root.add_order()
+
+        MDRaisedButton:
+            text: "Back to Menu"
+            on_press: root.manager.current = "MenuScreen"
+
+<SeeOrdersScreen>:
+    id: real_add_orders
+    name: "SeeOrdersScreen"
+
+    data_table: data_table
+
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "See Orders"
+            size_hint_y: None
+            height: "48dp"
+            font_size: "24sp"
+            bold: True
+            color: app.theme_cls.primary_color
+            canvas.before:
+                Color:
+                    rgba: app.theme_cls.bg_normal
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+        FloatLayout:
+            MDIconButton:
+                icon: "delete"
+                pos_hint: {"right": 0.80, "top": 0.95}
+                on_release: root.delete()
+
+        ScrollView:
+            do_scroll_x: False
+            GridLayout:
+                id: data_table
+                cols: 8
+                size_hint_y: None
+                height: self.minimum_height
+                padding: dp(10)
+                spacing: dp(10)
+
+        MDFloatingActionButton:
+            icon: "refresh"
+            pos_hint: {"right": 0.99, "top": 1}
+            on_release: root.update()
+
+        MDRaisedButton:
+            text: "Back to Menu"
+            on_press: root.manager.current = "MenuScreen"
+
+<PurchaseDialog>:
+    orientation: 'vertical'
+    size_hint_y: None
+    height: "100dp"
+    spacing: 20
+
+    MDTextField:
+        id: amount
+        hint_text: "Enter amount of the material you want to buy"
+        input_filter: 'int'
+        on_text:
+            self.text = str(max(0, min(100, int(self.text or 0))))
+            root.update_amount_text()
+    MDLabel:
+        id: total_cost
+        text: "Total cost: $0"
