@@ -179,6 +179,8 @@ justification of tolls - python, SQLite, kivy
 
 <img width="857" alt="Screenshot 2024-03-10 at 00 05 51" src="https://github.com/Rokyyz/Unit3/assets/134658259/9525e522-a8d3-474a-bc03-81f57250b140">
 
+<img width="891" alt="Screenshot 2024-03-10 at 03 13 58" src="https://github.com/Rokyyz/Unit3/assets/134658259/ddab83fb-9766-4879-bf1f-2f80b95cc14d">
+
 ### Client's review of the application during the development process
 
 
