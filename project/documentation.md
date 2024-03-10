@@ -99,11 +99,12 @@ This procedure entails adding order details to a database systematically. Initia
 the last few arrows dont show on the Fig. 6
 <img width="183" alt="Screenshot 2024-03-10 at 16 41 31" src="https://github.com/Rokyyz/Unit3/assets/134658259/60656dc0-eef9-446e-805d-524ff298d5b2">
 
-Fig. 7
+Fig. 7 This is the flow diagram that details the process of how the delete method works.
 
-[flowchart.zip](https://github.com/Rokyyz/Unit3/files/14549353/flowchart.zip)
+![flowchart](https://github.com/Rokyyz/Unit3/assets/134658259/2b0172c6-aa9a-44d5-b352-2b41c4d1e4a5)
 
 
+The described procedure serves to remove selected rows from a table efficiently. Initially, it retrieves the checked rows within the table. Subsequently, it establishes a connection with a SQLite database, iterating through each selected row to execute a delete query based on its corresponding id field. Upon successful deletion, an alert dialog is generated and displayed to confirm the action. Finally, the database connection is terminated, and the table is refreshed to reflect the modifications.
 
 ## Test Plan
 
