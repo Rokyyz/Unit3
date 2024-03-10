@@ -95,12 +95,12 @@ Fig 4.
 
 
 ## Flow Diagrams
-Fig. 5
+Fig. 5 This is the flow diagram that details the process of how the try_register method words
 
-def try_register
+[hard flowchart project 3.jpg-20240310T115628Z-001.zip](https://github.com/Rokyyz/Unit3/files/14550016/hard.flowchart.project.3.jpg-20240310T115628Z-001.zip)
 
 
-Fig. 6 This is the flow diagram that details the process of how the add order method works.
+Fig. 6 This is the flow diagram that details the process of how the add_order method works.
 
 This procedure entails adding order details to a database systematically. Initially, it checks the input fields for completeness, ensuring they are not left empty. Upon validation, it establishes a connection with a SQLite database utilizing the DatabaseWoker class and executes an SQL query to incorporate the order information into the database. Subsequently, a notification pop-up confirms the successful addition of the order to the database. Lastly, it resets the input fields, enabling users to seamlessly input additional order data.
 
