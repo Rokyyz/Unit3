@@ -76,8 +76,11 @@ Fig. 1 This is the system diagram for the proposed solution.
 The system diagram serves as a comprehensive visual depiction of the project's structure, showcasing its core components and their interconnectedness. It illustrates the application's functionality, highlighting key elements such as the programming languages employed (Python and KivyMD), the input (keyboard) , the output screen (application interface on the computer screen), the computer version and detail (Processor, version, memory, etc.), the database management system (SQLite), and the development environment (PyCharm). This graphical representation displays the intricate relationships within the system, offering a clear understanding of its architecture and operation.
 
 ## Wireframe Diagram
+<img width="883" alt="Screenshot 2024-03-10 at 15 52 09" src="https://github.com/Rokyyz/Unit3/assets/134658259/a279ae6a-e01c-4a9f-bed9-98ddc7351942">
 
+Fig. 2 This is the wireframe diagram for the application
 
+The wireframe diagram serves a crucial purpose in providing a visual blueprint of the user interface design, representing the application's structure and layout clearly and in a simple manner. It offers insights into how different screens are accessed via designated buttons, with arrows indicating the corresponding screen transitions upon user interaction - navigation flow. Through this wireframe, users gain an understanding of the application's interface dynamics, facilitating efficient interaction and navigation within the system.
 
 ## ER Diagram
 
