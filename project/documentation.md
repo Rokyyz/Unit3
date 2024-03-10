@@ -55,6 +55,7 @@ I decided to use KivyMD for the application interface itself as it is both easy 
 
 - [**Issue tackled: "As the factory grew bigger whenever the owner wanted some help or give a task to a worker, he had to call them by phone or walk to them and see them in person. Also because of company growth more and more workers were hired making the owner have difficulties in differentiating different workers."**]
 
+(See evidence of consultation in appendix A,B,C)
 
 # Criteria B: Design
 
@@ -589,16 +590,23 @@ https://youtu.be/1VaSJcf_u0E
 ## Evidence of consultation
 ### Client approval of proposed success criteria
 
+Appendix A
+
 <img width="857" alt="Screenshot 2024-03-10 at 00 05 51" src="https://github.com/Rokyyz/Unit3/assets/134658259/9525e522-a8d3-474a-bc03-81f57250b140">
 
 <img width="891" alt="Screenshot 2024-03-10 at 03 13 58" src="https://github.com/Rokyyz/Unit3/assets/134658259/ddab83fb-9766-4879-bf1f-2f80b95cc14d">
 
 ### Client's review of the application during the development process
 
+Appendix B
+
 <img width="887" alt="Screenshot 2024-03-10 at 14 44 24" src="https://github.com/Rokyyz/Unit3/assets/134658259/be116b58-fc5f-46b0-8c67-5ee57a9fe7b7">
 
 
 ### Client's review of final product
+
+Appendix C
+
 <img width="867" alt="Screenshot 2024-03-10 at 14 46 42" src="https://github.com/Rokyyz/Unit3/assets/134658259/732b38ee-828d-49b2-bc05-42cf1ec462bf">
 
 
