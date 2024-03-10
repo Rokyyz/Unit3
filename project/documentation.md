@@ -106,6 +106,7 @@ The method serves to register a user for the application to eventually allow the
 
 ![please work](https://github.com/Rokyyz/Unit3/assets/134658259/44f6f028-3544-4703-8b86-bbf9b55f717f)
 
+
 Fig. 6 This is the flow diagram that details the process of how the add_order method works.
 
 This method entails adding order details to a database systematically. Initially, it checks the input fields for completeness, ensuring they are not left empty. Upon validation, it establishes a connection with an SQLite database utilizing the DatabaseWoker class and executes an SQL query to incorporate the order information into the database. Subsequently, a notification pop-up confirms the successful addition of the order to the database. Lastly, it resets the input fields, enabling users to seamlessly input additional order data.
