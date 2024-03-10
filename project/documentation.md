@@ -83,10 +83,20 @@ Fig. 2 This is the wireframe diagram for the application
 The wireframe diagram serves a crucial purpose in providing a visual blueprint of the user interface design, representing the application's structure and layout clearly and in a simple manner. It offers insights into how different screens are accessed via designated buttons, with arrows indicating the corresponding screen transitions upon user interaction - navigation flow. Through this wireframe, users gain an understanding of the application's interface dynamics, facilitating efficient interaction and navigation within the system.
 
 ## ER Diagram
+Fig. 3
 
 ## UML Diagram
+Fig 4.
 
 ## Flow Diagrams
+Fig. 5
+
+Fig. 6 This is the flow diagram that details the process of how the add order method works.
+
+This procedure entails adding order details to a database systematically. Initially, it checks the input fields for completeness, ensuring they are not left empty. Upon validation, it establishes a connection with a SQLite database utilizing the DatabaseWoker class and executes an SQL query to incorporate the order information into the database. Subsequently, a notification pop-up confirms the successful addition of the order to the database. Lastly, it resets the input fields, enabling users to seamlessly input additional order data.
+<img width="93" alt="Screenshot 2024-03-10 at 16 25 06" src="https://github.com/Rokyyz/Unit3/assets/134658259/8803290b-ca45-47a5-a8f7-d8cbe6428b59">
+
+
 
 ## Test Plan
 
