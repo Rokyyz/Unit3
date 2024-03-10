@@ -371,7 +371,6 @@ Firstly it establishes a connection, then the query selects every asset and its 
 
 ```.py
         if check_hash(hash, passwd):
-            print("User logged in successfully")
             self.parent.current = "MenuScreen"  # Go to menu screen after successful login
         else:
             dialog = MDDialog(title="Invalid information",
@@ -380,28 +379,154 @@ Firstly it establishes a connection, then the query selects every asset and its 
 
 ```
 
-This code snippet is part of a login system. It checks whether the password entered by the user matches the password stored in the database for the corresponding username. First, it computes a hash of the entered password and compares it with the stored hash in the database. If the hashes match, indicating that the password is correct, the program proceeds to log the user in by changing the current screen to the "MenuScreen." However, if the hashes do not match, meaning the password is incorrect, it displays an error message prompting the user to check their username or password. This functionality ensures secure user authentication, a fundamental aspect of any login system. Similar methods can be applied in other parts of the codebase, such as registration and data validation, to ensure data integrity and system reliability.
-
-### User Credential Verification
+This code snippet is part of a login system. It checks whether the password entered by the user matches the password stored in the database for the respective username. First, it creates a hash with the help of DatabaseWorker of the entered password and compares it with the stored hash in the database. If the hashes match, indicating that the password is correct, the program logs the user in by changing the current screen to the "MenuScreen." However, if the hashes do not match, meaning the password is incorrect, it displays an error message indicating the user to check their username or password. This functionality ensures secure user authentication, application resilience, and longevity, a fundamental aspect of any login system. 
 
 ### Pop Up Message
+
+```.py
+            if result:
+                dialog = MDDialog(title="User exists",
+                                  text=f"The username you entered: {self.ids.uname.text} already exists.")
+                dialog.open()
+```
+
+
+This part of the code checks the result obtained from a database query. If the result is not empty, meaning a user with the entered username already exists in the database, it creates and displays a dialog box thus indicating to the user to recheck the entered information. The dialog box contains a title indicating "User exists" and a message stating that the username the user entered already exists in the database. This feature enhances user experience by providing real-time feedback and preventing already registered usernames in the system, ensuring data integrity and user clarity.
+
 
 ## Add Orders System
 
 ### Missing Value Validation
 
+```.py
+# Customer name validation
+        if customer_name == "":
+            self.ids.customer_name.error = True
+```
+
+
+This code is responsible for validating the customer name input. If the name field is left blank, indicating no input from the user, it sets an error flag to True for the customer name input field. This flag helps visually indicate to the user that there is an issue with the input by highlighting an error indicator next to the customer name field. This validation ensures that the user provides a valid customer name before proceeding, thereby improving the accuracy and completeness of the data collected by the application.
+
+
+
 ### Time Picker
+
+```.py
+    def show_time_picker(self):
+        from datetime import datetime
+
+        # Define default time
+        default_time = datetime.strptime("12:00", '%H:%M').time()
+
+        time_dialog = MDTimePicker(
+            primary_color="#8dbcd6",
+            accent_color="#f4f4f4",
+            text_button_color="#f4f4f4",
+        )
+        # Set default Time
+        time_dialog.set_time(default_time)
+        time_dialog.bind(on_cancel=self.on_cancel, time=self.get_time, on_save=self.on_save_time)
+        time_dialog.open()
+```
+
+
+This function displays a time picker pop-up message/dialog for the user. It begins by importing the datetime module to help with time-related operations. The default time is set to 12:00, as usual in other applications, with the help of the datetime.strptime() function.
+
+The MDTimePicker widget is then adjusted for the color display. The time that the user will always see when seeing this dialog is applied to the time picker using the set_time() method. There are also functions such as canceling, saving, and selecting a time added tp the time picker.
+
+Finally, the time picker dialog is opened, allowing the user to see it and finally interact with it. This function provides a user-friendly interface for selecting time values within the application.
 
 ### Date Picker
 
+```.py
+    def date(self):
+        date_dialog = MDDatePicker()
+        date_dialog.bind(on_save=self.on_save)
+        date_dialog.open()
+
+    def on_save(self, instance, value, date_range):
+        self.selected_date = value
+        value = value.strftime("%m/%d/%Y")
+        self.ids.date.text = f"{value}"
+```
+
+This code is similar to the time picker, it is responsible for handling the selection of dates. Initially, a `MDDatePicker` widget is created, allowing users to choose a date from a calendar interface. 
+
+The `on_save` method indicates that it should be triggered when the user selects a date and saves it. When this happens, the selected date value is captured and stored in the `self.selected_date` attribute. 
+
+After that, the selected date is formatted into a string and stored with the desired format ("%m/%d/%Y") using the `strftime()` method. This formatted date string is then addressed as a `text` property of a UI element identified by the id "date," updating the interface to display the selected date. 
+
+This code enables users to pick a date from a calendar, captures the selected date, and updates the UI to reflect the chosen date.
+
 ### Checkboxes
 
-### Insert Query
+```.py
+    def checkbox_click(self, checkbox, value, racket):
+        if value:  # if the check is true
+            self.selected_racket = racket
+            self.ids.racket.text = f"{racket}"
+```
+
+This code manages the selection of checkboxes representing different racket options. Whenever a checkbox is clicked, this function is called with three parameters: the checkbox object itself, the boolean value indicating and checking whether the checkbox is checked or unchecked, and the label text associated with the checkbox - the type of a racket which the user chooses.
+
+The if statement checks if the checkbox is checked value = True. If the checkbox is checked, the code updates the self.selected_racket attribute to store the selected racket type by the user. Finally, the label text of the UI element identified by the id "racket" is updated to display the selected racket type, providing visual feedback to the user.
+
+This function handles the selection of racket options via checkboxes, storing the selected option and updating the UI accordingly.
 
 
+## Orders for workers
+### Data table display
 
+```.py
+# Displays the table on the screen
+    def on_pre_enter(self, *args):
+        self.data_table = MDDataTable(
+            size_hint=(.7, .6),
+            pos_hint={"center_x": .5, "center_y": .5},
+            use_pagination=True,
+            check=True,
+            column_data=[("id", 80), ("workername", 50), ("description", 60),
+                         ("message", 45), ("status", 70)]
+        )
+        self.data_table.bind(on_row_press=self.row_pressed)
+        self.data_table.bind(on_check_press=self.check_pressed)
+        self.add_widget(self.data_table)
+        self.update()
+```
+This code defines a method named `on_pre_enter` responsible for displaying a table on the given screen. This method initializes a `MDDataTable` widget, which represents a table that can display data in a structured format its almost like a template. The `MDDataTable` is configured with specific attributes such as its size hint, position hint, pagination usage, and the data columns it should contain. All of these help either position the table or add some slick features that the user can utilize.
 
+`MDDataTable` is closely linked with `on_row_press` and `on_check_press`. When a  row is pressed or when a row's checkbox is pressed this should be executed.
 
+Once the `MDDataTable` is configured, it is added to the screen by calling the `add_widget` method, making it visible to the user. Finally, the `update` method is called to "live" update the table data, for example, when the manager adds information for a worker using the orders for workers screen this method makes sure that this information immediately gets added to the workers table screen. 
+
+This method sets up and displays a table widget on the screen, providing an interface for viewing and interacting with structured data.
+
+## Inventory
+### Buying materials
+
+```.py
+    def purchase(self):
+        # Purchase (take away money and add materials)
+        current_total = LoginApp.db.search(query="SELECT total FROM Transactions WHERE id=(SELECT max(id) FROM Transactions)")[0]
+        if current_total < PurchaseDialog.cost:  # if not sufficient money
+            errors.append("Not enough money!")
+        else:
+            query = f"""insert into Transactions (buy, sell, amount, total)
+                        values (1, 0, {PurchaseDialog.cost}, {current_total - PurchaseDialog.cost})"""
+            LoginApp.db.run_query(query=query)
+            query = f"""update Inventory set amount=((select amount from Inventory where Inventory.name='{InventoryScreen.current_material}')+{PurchaseDialog.amount})
+                        where name='{InventoryScreen.current_material}'"""
+            LoginApp.db.run_query(query=query)
+            errors.append("Purchase successful!")
+        self.dialog.dismiss()
+        self.show_popup(messages=errors, text="OK")
+```
+
+This function, `purchase`, is responsible for handling the purchase of materials within the application. Upon execution, it first retrieves the current total amount of money from the database by querying the `Transactions` table.
+
+Then, the function checks if the current total amount of money is sufficient to cover the cost of the purchase. If there's enough money, it proceeds with the purchase by executing SQL queries to update the `Transactions` table with the new transaction and to update the `Inventory` table with the purchased materials. The total amount of money is also updated accordingly.
+
+After the purchase is completed (or if there's not enough money), the dialog window used for the purchase is dismissed. Then, a popup message is displayed to inform the user about the outcome of the purchase, whether it was successful, or if there were any errors encountered during the process. Finally, the function exits, completing the purchase operation.
 
 # Criteria D: Functionality
 ## Video Showcasing the Functionality of the Application
