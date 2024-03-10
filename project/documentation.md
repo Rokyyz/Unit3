@@ -47,7 +47,7 @@ I decided to use KivyMD for the application interface itself as it is both easy 
 
 - [**Issue tackled: "Concerns about company security breaches, someone unauthorized logging in"**]
   
-5. The application offers an overview of the workers on the factory ground displaying ID, name, description, status, location, and message
+5. The application offers an overview of the workers on the factory ground displaying ID, name, description, status, and message
 
 - [**Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who is on factory grounds and who is not as well as the issue of informing the workers of the tasks they need to execute."**]
   
