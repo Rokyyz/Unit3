@@ -31,27 +31,27 @@ I decided to use the Python language to develop the functions of the application
 I decided to use KivyMD for the application interface itself as it is both easy to learn and work with. One of KivyMD's main advantages is that it is a multi-platform application development framework that runs on different platforms like Android, iOS, Windows, and Linux, and is written in the Python programming language [^4]. KivyMD already has a set of pre-built user-interface elements and styles that can be easily customized and integrated into Kivy-based applications [^5]. This allows me to save the time and effort needed in creating user-interface elements from scratch, allowing me to focus on other aspects of the development to complete the application on time for my client. Even though there are many advantages to using KivyMD, there are also some disadvantages. For example, there are other alternatives such as Flutter or PyQt, which both have larger communities for support and are better at developing native applications, compared to KivyMD [^6]. However, due to how easy it is to learn, customizability, and compatibility, I used the KivyMD library to construct the application's interface.
 
   ## Sucess criteria
-1. The application offers a feature to track money (tracking meaning that these transactions would be registered and safely saved in a database): orders, and purchases.
+1. The application offers a feature to track money and display it on a data table (tracking meaning that these transactions would be registered and safely saved in a database): purchases of inventory addition.
 
-- [**Issue tackled: "Disorganized financial departments, do not have space to keep track of the economic transactions of their shop, thus using primitive functions, more effort, work hours, unsafe, and unorganized."**]
+- [**Issue tackled: "Disorganized financial departments, do not have space to keep track of the economic transactions of their shop, thus more effort, work hours, unsafe, and unorganized."**]
   
-2. The application offers a feature to keep track of inventory (keeping track meaning that it is saved on a database and displayed to the owner on a separate GUI screen)
+2. The application offers a feature to purchase materials for inventory additions (keeping track meaning that it is saved on a database and displayed on a GUI screen)
 
- - [**Issue tackled: "Having problems overseeing the inventory of materials left for production, thus leading to future budget proposition problems"**]
+ - [**Issue tackled: "Having problems purchasing additional materials for the inventory, thus leading to shortages of material, production  rates, and efficiency going down, budget proposition problems"**]
    
-3. The application offers a virtual machine that allows the user to create an order and record the activity in a data table.
+3. The application offers a virtual machine that allows the user to create an order and the application records the activity in a data table.
 
 - [Issue tackled: "A need to find an easier alternative to place an order for the shop and thus start the production for it swiftly"]
   
-4. The application offers a login page - register new accounts, and login existing accounts with responsive feedback messages.
+4. The application offers a login, and signup page - register new accounts, and login existing accounts with responsive feedback messages.
 
 - [**Issue tackled: "Concerns about company security breaches, someone unauthorized logging in"**]
   
-5. The application offers an overview of the workers on the factory ground displaying ID, name, description, status, and message
+5. The application offers to enter messages/orders to the workers along with the information of the workers' ID, name, description, status, and message.
 
 - [**Issue tackled: "As the factory grew and the owner required help from his coworkers, it was tough to figure out who is on factory grounds and who is not as well as the issue of informing the workers of the tasks they need to execute."**]
   
-6. The application provides a table to see messages given to any worker and their status, description, and name.
+6. The application provides a table to see the messages given to any worker and their status, description, and name.
 
 - [**Issue tackled: "As the factory grew bigger whenever the owner wanted some help or give a task to a worker, he had to call them by phone or walk to them and see them in person. Also because of company growth more and more workers were hired making the owner have difficulties in differentiating different workers."**]
 
