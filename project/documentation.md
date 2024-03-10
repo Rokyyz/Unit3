@@ -99,6 +99,10 @@ This procedure entails adding order details to a database systematically. Initia
 the last few arrows dont show on the Fig. 6
 <img width="183" alt="Screenshot 2024-03-10 at 16 41 31" src="https://github.com/Rokyyz/Unit3/assets/134658259/60656dc0-eef9-446e-805d-524ff298d5b2">
 
+Fig. 7
+
+[flowchart.zip](https://github.com/Rokyyz/Unit3/files/14549353/flowchart.zip)
+
 
 
 ## Test Plan
