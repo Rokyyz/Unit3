@@ -99,13 +99,14 @@ Fig 4. The UML diagram offers a comprehensive representation of the object-orien
 ## Flow Diagrams
 
 ![hard flowchart project 3 drawio](https://github.com/Rokyyz/Unit3/assets/134658259/68aa4db0-6e88-420d-bf90-7d5b1b54f9b0)
+
+
 Fig. 5 This is the flow diagram that details the process of how the try_register method words
 
 The method serves to register a user for the application to eventually allow the user to log into the application. This is achieved by first checking if passwords match (password, confirm password), then checking if the user has already been registered in the database. If they haven't the username and password are added and stored in the "users" database. To add, the password is also hashed for protection purposes.
 
 
 ![please work](https://github.com/Rokyyz/Unit3/assets/134658259/44f6f028-3544-4703-8b86-bbf9b55f717f)
-
 
 Fig. 6 This is the flow diagram that details the process of how the add_order method works.
 
