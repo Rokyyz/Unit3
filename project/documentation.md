@@ -181,8 +181,7 @@ The described method serves to remove selected rows from a table efficiently. In
 3. Variables
 4. For loops
 5. If statements
-6. Plotting graphs
-7. Functions
+6. Functions
 
 ## Computational thinking
 1. decomposition
