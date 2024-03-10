@@ -83,13 +83,22 @@ Fig. 2 This is the wireframe diagram for the application
 The wireframe diagram serves a crucial purpose in providing a visual blueprint of the user interface design, representing the application's structure and layout clearly and in a simple manner. It offers insights into how different screens are accessed via designated buttons, with arrows indicating the corresponding screen transitions upon user interaction - navigation flow. Through this wireframe, users gain an understanding of the application's interface dynamics, facilitating efficient interaction and navigation within the system.
 
 ## ER Diagram
-Fig. 3
+Fig. 3 This is the ER Diagram showing the 5 tables: workers, transactions, orders, users, inventory.
+
+
+![CommSci 40](https://github.com/Rokyyz/Unit3/assets/134658259/756c1692-9844-48ce-8ba2-9d6b389674bf)
+
 
 ## UML Diagram
 Fig 4.
 
+
+
 ## Flow Diagrams
 Fig. 5
+
+def try_register
+
 
 Fig. 6 This is the flow diagram that details the process of how the add order method works.
 
