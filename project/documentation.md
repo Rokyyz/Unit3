@@ -82,36 +82,41 @@ Fig. 2 This is the wireframe diagram for the application
 The wireframe diagram serves a crucial purpose in providing a visual blueprint of the user interface design, representing the application's structure and layout clearly and in a simple manner. It offers insights into how different screens are accessed via designated buttons, with arrows indicating the corresponding screen transitions upon user interaction - navigation flow. Through this wireframe, users gain an understanding of the application's interface dynamics, facilitating efficient interaction and navigation within the system.
 
 ## ER Diagram
-Fig. 3 This is the ER Diagram showing the 5 tables: workers, transactions, orders, users, and inventory.
 
 
 ![CommSci 40](https://github.com/Rokyyz/Unit3/assets/134658259/756c1692-9844-48ce-8ba2-9d6b389674bf)
+Fig. 3 This is the ER Diagram showing the 5 tables: workers, transactions, orders, users, and inventory.
 
 
 ## UML Diagram
+
+
 Fig 4. The UML diagram offers a comprehensive representation of the object-oriented programming (OOP) classes employed throughout the application's development journey.  Through the illustrated arrows, it is evident that all subclasses inherit essential methods and attributes from these parent classes, ensuring coherence and efficiency within the application's architecture. Additionally, the inclusion of specialized classes, such as the DatabaseWorker class, underscores their crucial role in facilitating database operations, including connection establishment, data retrieval, storage, and termination, thereby contributing significantly to the application's robustness and functionality.
 
 
 
 ## Flow Diagrams
-Fig. 5 This is the flow diagram that details the process of how the try_register method words
 
 ![hard flowchart project 3 drawio](https://github.com/Rokyyz/Unit3/assets/134658259/68aa4db0-6e88-420d-bf90-7d5b1b54f9b0)
+Fig. 5 This is the flow diagram that details the process of how the try_register method words
 
+The method serves to register a user for the application to eventually allow the user to log into the application. This is achieved by first checking if passwords match (password, confirm password), then checking if the user has already been registered in the database. If they haven't the username and password are added and stored in the "users" database. To add, the password is also hashed for protection purposes.
+
+
+![please work](https://github.com/Rokyyz/Unit3/assets/134658259/44f6f028-3544-4703-8b86-bbf9b55f717f)
 
 Fig. 6 This is the flow diagram that details the process of how the add_order method works.
 
-This procedure entails adding order details to a database systematically. Initially, it checks the input fields for completeness, ensuring they are not left empty. Upon validation, it establishes a connection with an SQLite database utilizing the DatabaseWoker class and executes an SQL query to incorporate the order information into the database. Subsequently, a notification pop-up confirms the successful addition of the order to the database. Lastly, it resets the input fields, enabling users to seamlessly input additional order data.
+This method entails adding order details to a database systematically. Initially, it checks the input fields for completeness, ensuring they are not left empty. Upon validation, it establishes a connection with an SQLite database utilizing the DatabaseWoker class and executes an SQL query to incorporate the order information into the database. Subsequently, a notification pop-up confirms the successful addition of the order to the database. Lastly, it resets the input fields, enabling users to seamlessly input additional order data.
 
-![please work](https://github.com/Rokyyz/Unit3/assets/134658259/44f6f028-3544-4703-8b86-bbf9b55f717f)
+
+
+![flowchart](https://github.com/Rokyyz/Unit3/assets/134658259/2b0172c6-aa9a-44d5-b352-2b41c4d1e4a5)
 
 Fig. 7 This is the flow diagram that details the process of how the delete method works.
 
 
-The described procedure serves to remove selected rows from a table efficiently. Initially, it retrieves the checked rows within the table. Subsequently, it establishes a connection with an SQLite database, iterating through each selected row to execute a delete query based on its corresponding id field. Upon successful deletion, an alert dialog is generated and displayed to confirm the action. Finally, the database connection is terminated, and the table is refreshed to reflect the modifications.
-
-![flowchart](https://github.com/Rokyyz/Unit3/assets/134658259/2b0172c6-aa9a-44d5-b352-2b41c4d1e4a5)
-
+The described method serves to remove selected rows from a table efficiently. Initially, it retrieves the checked rows within the table. Subsequently, it establishes a connection with an SQLite database, iterating through each selected row to execute a delete query based on its corresponding id field. Upon successful deletion, an alert dialog is generated and displayed to confirm the action. Finally, the database connection is terminated, and the table is refreshed to reflect the modifications.
 
 ## Test Plan
 
