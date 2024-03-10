@@ -1,4 +1,4 @@
-
+![hard flowchart project 3 drawio](https://github.com/Rokyyz/Unit3/assets/134658259/fc2c0e0c-9153-4887-a458-ce564f2b9270)
 # Unit 3: "Airborne athletics" badminton shop center
 
 ![image](https://github.com/Rokyyz/Unit3/assets/134658259/8c89cf4d-453e-4023-8948-861f579cdafe) [^1]
@@ -97,17 +97,12 @@ Fig 4.
 ## Flow Diagrams
 Fig. 5 This is the flow diagram that details the process of how the try_register method words
 
-[hard flowchart project 3.jpg-20240310T115628Z-001.zip](https://github.com/Rokyyz/Unit3/files/14550016/hard.flowchart.project.3.jpg-20240310T115628Z-001.zip)
+![hard flowchart project 3 drawio](https://github.com/Rokyyz/Unit3/assets/134658259/68aa4db0-6e88-420d-bf90-7d5b1b54f9b0)
 
 
 Fig. 6 This is the flow diagram that details the process of how the add_order method works.
 
 This procedure entails adding order details to a database systematically. Initially, it checks the input fields for completeness, ensuring they are not left empty. Upon validation, it establishes a connection with an SQLite database utilizing the DatabaseWoker class and executes an SQL query to incorporate the order information into the database. Subsequently, a notification pop-up confirms the successful addition of the order to the database. Lastly, it resets the input fields, enabling users to seamlessly input additional order data.
-
-![flowchart for add order project 3](https://github.com/Rokyyz/Unit3/assets/134658259/362cc74f-60c8-4364-b106-a36d79dee8b0)
-most of the arrows don't show on the Fig. 6 because of a bug so here is an example of how it should be
-<img width="183" alt="Screenshot 2024-03-10 at 16 41 31" src="https://github.com/Rokyyz/Unit3/assets/134658259/60656dc0-eef9-446e-805d-524ff298d5b2">
-
 
 ![please work](https://github.com/Rokyyz/Unit3/assets/134658259/44f6f028-3544-4703-8b86-bbf9b55f717f)
 
