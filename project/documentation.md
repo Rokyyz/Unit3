@@ -29,9 +29,6 @@ I chose to use SQLite as the database management system for the given task. SQLi
 I decided to use the Python language to develop the functions of the application because it is the most popular and widely used programming language and it is also among the fastest-growing programming languages in the tech industry [^2]. As a result of its widespread use, the program is easier for many developers to understand than languages like C or Javascript. This will benefit applications being programmed in Python because it makes it simple for upcoming programmers to comprehend the code and advance its development. There are also a wide range of libraries that are available in Python which can be easily accessed using a basic syntax [^3]. A big benefit is that Pyhton is quite easy to make compatible with other types of databases and, moreover, work/edit them which is majorly important for the development of this application. These are the arguments why Python programming language is adequate for developing my client's desired application.
 
 I decided to use KivyMD for the application interface itself as it is both easy to learn and work with. One of KivyMD's main advantages is that it is a multi-platform application development framework that runs on different platforms like Android, iOS, Windows, and Linux, and is written in the Python programming language [^4]. KivyMD already has a set of pre-built user-interface elements and styles that can be easily customized and integrated into Kivy-based applications [^5]. This allows me to save the time and effort needed in creating user-interface elements from scratch, allowing me to focus on other aspects of the development to complete the application on time for my client. Even though there are many advantages to using KivyMD, there are also some disadvantages. For example, there are other alternatives such as Flutter or PyQt, which both have larger communities for support and are better at developing native applications, compared to KivyMD [^6]. However, due to how easy it is to learn, customizability, and compatibility, I used the KivyMD library to construct the application's interface.
-  
-- general solution - "GUI" that is connected to the database
-justification of tolls - python, SQLite, kivy
 
   ## Sucess criteria
 1. The application offers a feature to track money (tracking meaning that these transactions would be registered and safely saved in a database): orders, and purchases.
@@ -57,10 +54,6 @@ justification of tolls - python, SQLite, kivy
 6. The application provides a table to see messages given to any worker and their status, description, and name.
 
 - [**Issue tackled: "As the factory grew bigger whenever the owner wanted some help or give a task to a worker, he had to call them by phone or walk to them and see them in person. Also because of company growth more and more workers were hired making the owner have difficulties in differentiating different workers."**]
-
-
-3 flow charts - easy, medium hard difficulty code
-4-5 code fragment explenations, 1 for each criteria
 
 
 # Criteria B: Design
