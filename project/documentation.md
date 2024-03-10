@@ -183,6 +183,10 @@ justification of tolls - python, SQLite, kivy
 
 ### Client's review of the application during the development process
 
+<img width="887" alt="Screenshot 2024-03-10 at 14 44 24" src="https://github.com/Rokyyz/Unit3/assets/134658259/be116b58-fc5f-46b0-8c67-5ee57a9fe7b7">
 
 
 ### Client's review of final product
+<img width="867" alt="Screenshot 2024-03-10 at 14 46 42" src="https://github.com/Rokyyz/Unit3/assets/134658259/732b38ee-828d-49b2-bc05-42cf1ec462bf">
+
+
