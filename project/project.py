@@ -25,6 +25,9 @@ class LoginApp(MDApp):
         return
 
 class MenuScreen(MDScreen):
+    def __init__(self, *args, **kwargs):
+        super().__init__(args, kwargs)
+
     def go_to_inventory(self):
         self.manager.current = "InventoryScreen"
 
@@ -71,7 +74,12 @@ class MenuScreen(MDScreen):
         # Perform the signout actions
         print("User logging out")
         self.parent.current = "LoginScreen"
+        login_screen = self.parent.get_screen('LoginScreen')
+        login_screen.ids.uname.text = ""
+        login_screen.ids.passwd.text = ""
+        login_screen.ids.c_log_passwd.text = ""
         self.sign_out_confirmation_dialog.dismiss()
+
 
     def dismiss_dialog(self, instance):
         self.sign_out_confirmation_dialog.dismiss()
@@ -457,6 +465,7 @@ class OrdersForWorkersScreen(MDScreen):
         message = self.ids.message.text
         status = self.selected_status
 
+
         # Customer name validation
         if workername == "":
             self.ids.workername.error = True
@@ -525,14 +534,16 @@ class SignupScreen(MDScreen):
         self.parent.current = "LoginScreen"
 
     def try_register(self):
+        checker = True
         uname = self.ids.uname.text
         passwd = self.ids.e_passwd.text
         c_passwd = self.ids.c_passwd.text
-        checker = True
+
 
         if passwd != c_passwd:
             self.ids.e_passwd.error = True
             self.ids.c_passwd.error = True
+            checker = False
 
         else:
             # Check if username exists
@@ -545,9 +556,7 @@ class SignupScreen(MDScreen):
                 dialog = MDDialog(title="User exists",
                                   text=f"The username you entered: {self.ids.uname.text} already exists.")
                 dialog.open()
-                self.ids.uname.text = ""
-                self.ids.e_passwd.text = ""
-                self.ids.c_passwd.text = ""
+                checker = False
 
             else:
                 # Inserts the new user into the database and hashes their password
@@ -561,9 +570,10 @@ class SignupScreen(MDScreen):
                 print("Registration completed")
                 self.parent.current = "LoginScreen"
 
-                self.ids.uname.text = ""
-                self.ids.e_passwd.text = ""
-                self.ids.c_passwd.text = ""
+        if not checker:
+            self.ids.uname.text = ""
+            self.ids.e_passwd.text = ""
+            self.ids.c_passwd.text = ""
 
     def insert_user(self, username, password):
         conn = sqlite3.connect('FactoryManager.db')
