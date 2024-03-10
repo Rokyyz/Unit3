@@ -175,6 +175,8 @@ The described method serves to remove selected rows from a table efficiently. In
 4. For loops
 5. If statements
 6. Functions
+7. GUI (To make the application user-friendly and easy to use)
+8. API (To get the data from the server and to send the data to the server)
 
 ## Computational thinking
 1. decomposition
@@ -217,7 +219,7 @@ ScreenManager:
         name:"SeeOrdersScreen"
 ```
 
-A quick and easy method to arrange and navigate between the various screens in your application is with the ScreenManager. Because each screen is specified using a unique class that derives from the Screen class, unique functionality and properties may be defined for every screen. I was able to manage multiple screens and quickly transition between them because to the use of abstraction.
+A quick and easy method to arrange and navigate between the various screens in the application is with the use of ScreenManager. Because each screen is specified using a unique class that derives from the Screen class, unique functionality and properties may be defined for every screen.
 
 ### General Application Screen
 
@@ -252,7 +254,7 @@ A quick and easy method to arrange and navigate between the various screens in y
         padding: dp(50)
         md_bg_color: [0,0,0,0.5]
 ```
-This code block in the Kivy language defines the appearance of the "LoginScreen" screen. This is only one of the application's many screens. The KivyMD library contains an MDCard component, which simulates a rectangular card with rounded corners that holds other widgets. I used this as the overall basic configuration for every panel in the programme, making sure that every screen had the same background image and setup because my customer requested a polished and uncluttered appearance.
+This code block in the Kivy language defines the appearance of the "LoginScreen" screen. The KivyMD library contains an MDCard component, which helps to display a rectangular card with rounded corners that holds other widgets. I used this as the overall basic configuration for every panel in the program, making sure that every screen had the same background image and setup because my customer requested a polished and uncluttered appearance.
 
 ### MDFillRoundFlatIconButton
 
@@ -268,7 +270,7 @@ MDFillRoundFlatIconButton:
                 on_press: root.go_to_add_orders()
 ```
 
-One of the homepage buttons that will take the user to the specified screen in ScreenManager is displayed in the KV code above. This type of button is utilised on the homepage and satisfies the client's desire for a clean, professional look by being visually appealing and uncomplicated. I chose to utilise this button in order to provide some variation to the other button shapes I had. Another button I utilised is called MDRaisedButton; it is essentially the same as the button displayed in the code above, but it lacks an icon and a circular form.
+One of the homepage buttons that will take the user to the specified screen in ScreenManager is displayed in the KV code above. This type of button is utilized on the homepage and satisfies the client's desire for a clean, professional look by being visually appealing and uncomplicated. I chose to use this button to provide some variation to the other button shapes I had. Another button I implemented in the code and the final design is MDRaisedButton - essentially the same button displayed, but it doesn't have an icon and a circular form.
 
 ### MDLabel
 
@@ -281,7 +283,7 @@ MDLabel:
                 size_hint: 1, 0.1
 ```
 
-This is an MDLabel's KV code. Text labels known as MDLabels are displayed on the screen to help users navigate where they are in the programme. In this instance, I let the user know that they have reached the air traffic control programme by using the MDLabel as the headline for my homepage screen.
+This is an MDLabel's KV code. Text labels known as MDLabels are displayed on the screen to help users navigate where they are in the program. In this instance, I let the user know that they have reached the inventory manager in the menu screen by using the MDLabel as the headline.
 
 
 ### MDTextField
@@ -296,7 +298,7 @@ MDTextField:
             root.update_amount_text()
 ```
 
-I utilised an MDTextField similar to this one for my client's application. On the apps page, there are text boxes called MDTextFields that let users enter data using their keyboard. This is a crucial component of the application's user interface for my customer since it enables them to enter any data they desire into the system. I became aware that there is a good possibility that users will enter data into the MDTextField incorrectly when I was programming the MDTextFields. As previously mentioned, I have helper text, so if the user forgets to enter a piece of information, a red helper text error will appear to direct the user.
+I implemented also an MDTextField for my client's application. On the application, there are text boxes called MDTextFields that let users enter data using their keyboard serving as a manual input for the data required. This is a crucial component of the application's user interface for my customer, since it enables them to enter any data they desire into the system. I became aware that there is a good possibility that users will enter data into the MDTextField incorrectly or not enter it at all when programming the MDTextFields. As a result of this realization, I added helper text next to these input fields, so if the user forgets to enter a piece of information or enters it incorrectly, in a non-matching manner, a red helper text error will appear to inform the user.
 
 ### MDCheckbox
 
@@ -326,7 +328,7 @@ MDBoxLayout:
             size_hint: 1, .1
 ```
 
-A MDBoxLayout in KivyMD, is a box layout class that provides better compatibility with the Material Design specifications. This MDBoxLayout can be used to contain other widgets and arrange them horizontally within the application. It is a major help for the developer, this makes it easier to position other tools while designing the application.
+An MDBoxLayout in KivyMD is a box layout class that provides better compatibility with different widgets and other MD attributes that developers use when developing a front-end design. This MDBoxLayout can be used to contain other widgets and arrange them horizontally within the application. It is a major help for the developer, this makes it easier to position other tools while designing the application.
 
 
 ## Development of Application Using Python
@@ -350,7 +352,7 @@ from kivymd.uix.dialog import MDDialog
 from mon_8_jan.my_lib import DatabaseWorker, make_hash, check_hash
 
 ```
-A number of libraries needed to construct the Refrigerator Manager application are imported by the code. The SQLite database, which will be used to store information about users, workers, transactions, inventory, orders, and messages, may be accessed and modified using the sqlite3 library and DatabaseWorker. Additionally, it allows for the password can be hashed and verified. The application's graphical user interface (GUI), which will be simple to use and navigate, is built using the various kivymd libraries.
+A number of libraries needed to construct the "Airborne athletics" application are imported by the code provided below. The SQLite database, which will be used to store information about users, workers, transactions, inventory, orders, and messages, may be accessed and modified using the sqlite3 library and DatabaseWorker. Additionally, it allows for the password can be hashed and verified. The application's graphical user interface (GUI), which will be simple to use and navigate, is built using the various kivymd libraries.
 
 ## Database worker
 
@@ -527,6 +529,34 @@ This function, `purchase`, is responsible for handling the purchase of materials
 Then, the function checks if the current total amount of money is sufficient to cover the cost of the purchase. If there's enough money, it proceeds with the purchase by executing SQL queries to update the `Transactions` table with the new transaction and to update the `Inventory` table with the purchased materials. The total amount of money is also updated accordingly.
 
 After the purchase is completed (or if there's not enough money), the dialog window used for the purchase is dismissed. Then, a popup message is displayed to inform the user about the outcome of the purchase, whether it was successful, or if there were any errors encountered during the process. Finally, the function exits, completing the purchase operation.
+
+## Workers screen
+### Deleting an input in the table 
+
+```.py
+    def delete(self):
+        # Function to delete checked rows in the table
+        checked_rows = self.data_table.get_row_checks()  # Get the checked rows
+        print(checked_rows)
+        # delete
+        db = DatabaseWorker("FactoryManager.db")
+        for r in checked_rows:
+            id = r[0]  # use item_id instead of id
+            print(id)
+            query = f"delete from Workers where id = {id}"  # use item_id instead of id
+            print(query)
+            db.run_query(query)
+            # Create and open the alert dialog to confirm item has been deleted
+            dialog = MDDialog(title="Worker deleted!",
+                              text=f"Worker {id} has successfully been deleted.")
+            dialog.open()
+        db.close()
+        self.update()
+```
+The function, `delete`, is designed to remove selected rows from a table. First, it retrieves the checked rows from the table using the `get_row_checks()` method. More rows checked are found with a for loop which iterates through and finds the "targets". These selected "targets" by the user are the rows the user has selected to be deleted. Then, the function iterates over each checked row and retrieves its corresponding ID. It constructs a SQL query to delete the row from the `Workers` table in the database based on this ID. After executing the deletion query, it opens a dialog window to display to the user that the worker has been successfully deleted.
+
+Once all selected rows have been deleted and confirmed, the function closes the database connection and updates the table to reflect the changes made. This ensures that the user interface remains synchronized with the database state after the deletion operation.
+
 
 # Criteria D: Functionality
 ## Video Showcasing the Functionality of the Application
