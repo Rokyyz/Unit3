@@ -1,4 +1,3 @@
-![hard flowchart project 3 drawio](https://github.com/Rokyyz/Unit3/assets/134658259/fc2c0e0c-9153-4887-a458-ce564f2b9270)
 # Unit 3: "Airborne athletics" badminton shop center
 
 ![image](https://github.com/Rokyyz/Unit3/assets/134658259/8c89cf4d-453e-4023-8948-861f579cdafe) [^1]
