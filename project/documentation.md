@@ -193,24 +193,201 @@ The described method serves to remove selected rows from a table efficiently. In
 
 ### Screen Manager
 
+```.kv
+ScreenManager:
+    LoginScreen:
+        name: "LoginScreen"
+
+    SignupScreen:
+        name: "SignupScreen"
+
+    MenuScreen:
+        name: "MenuScreen"
+
+    InventoryScreen:
+        name: "InventoryScreen"
+
+    TransactionsScreen:
+        name: "TransactionsScreen"
+
+    WorkersScreen:
+        name: "WorkersScreen"
+
+    OrdersForWorkersScreen:
+        name: "OrdersForWorkersScreen"
+
+    AddOrdersScreen
+        name: "AddOrdersScreen"
+
+
+    SeeOrdersScreen
+        name:"SeeOrdersScreen"
+```
+
+A quick and easy method to arrange and navigate between the various screens in your application is with the ScreenManager. Because each screen is specified using a unique class that derives from the Screen class, unique functionality and properties may be defined for every screen. I was able to manage multiple screens and quickly transition between them because to the use of abstraction.
+
 ### General Application Screen
+
+```.kv
+<LoginScreen>:
+    canvas.before:
+        Rectangle:
+            source: "bad.jpeg"
+            size: self.size
+            pos: self.pos
+
+    BoxLayout:
+        orientation: 'vertical'
+        margin: 'sdp50'
+
+        MDLabel:
+            text: "Welcome to Airborne Rackets"
+            font_name: 'Copyduck.ttf'
+            font_size: '30pt'
+            bold: True
+            color: 'black'
+            pos_hint:{"center_x":.75, "center_y":.2}
+            theme_text_color: 'Custom'
+            text_color: 0,0,0,1
+            halign: 'center'
+
+    MDCard:
+        size_hint: .35, .8
+        elevation: 2
+        orientation: "vertical"
+        pos_hint: {"center_x": .3, "center_y": .5}
+        padding: dp(50)
+        md_bg_color: [0,0,0,0.5]
+```
+This code block in the Kivy language defines the appearance of the "LoginScreen" screen. This is only one of the application's many screens. The KivyMD library contains an MDCard component, which simulates a rectangular card with rounded corners that holds other widgets. I used this as the overall basic configuration for every panel in the programme, making sure that every screen had the same background image and setup because my customer requested a polished and uncluttered appearance.
 
 ### MDFillRoundFlatIconButton
 
+```.kv
+MDFillRoundFlatIconButton:
+                id: menu_add_order
+                size_hint: 1, None
+                size_hint_y: None
+                height: "100dp"
+                icon: 'plus-circle'
+                text: "Add order"
+                font_size: "20sp"
+                on_press: root.go_to_add_orders()
+```
+
+One of the homepage buttons that will take the user to the specified screen in ScreenManager is displayed in the KV code above. This type of button is utilised on the homepage and satisfies the client's desire for a clean, professional look by being visually appealing and uncomplicated. I chose to utilise this button in order to provide some variation to the other button shapes I had. Another button I utilised is called MDRaisedButton; it is essentially the same as the button displayed in the code above, but it lacks an icon and a circular form.
+
 ### MDLabel
+
+```.kv
+MDLabel:  
+                text: "Inventory Manager"
+                font_style: "H3"
+                halign: "left"
+                pos_hint: {'center_x': 0.51, 'center_y': 1}
+                size_hint: 1, 0.1
+```
+
+This is an MDLabel's KV code. Text labels known as MDLabels are displayed on the screen to help users navigate where they are in the programme. In this instance, I let the user know that they have reached the air traffic control programme by using the MDLabel as the headline for my homepage screen.
+
 
 ### MDTextField
 
+```.kv
+MDTextField:
+        id: amount
+        hint_text: "Enter amount of the material you want to buy"
+        input_filter: 'int'
+        on_text:
+            self.text = str(max(0, min(100, int(self.text or 0))))
+            root.update_amount_text()
+```
+
+I utilised an MDTextField similar to this one for my client's application. On the apps page, there are text boxes called MDTextFields that let users enter data using their keyboard. This is a crucial component of the application's user interface for my customer since it enables them to enter any data they desire into the system. I became aware that there is a good possibility that users will enter data into the MDTextField incorrectly when I was programming the MDTextFields. As previously mentioned, I have helper text, so if the user forgets to enter a piece of information, a red helper text error will appear to direct the user.
+
 ### MDCheckbox
+
+```.kv
+MDCheckbox:                      
+        id: show_pass                
+        size_hint_x: 0.1             
+        on_active: passwd.password = not self.active  
+        on_active: c_log_passwd.password = not self.active
+        active: False
+```
+
+### MDIconButton
+
+```.kv
+MDIconButton:
+                icon: "eye"
+                size_hint_x: 0.08
+```
+MDIconButton is a button with an icon from the Material Design icon set, this allows for the application to appear more eye-appealing
+
+### MDBoxLayout
+
+```.kv
+MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+```
+
+A MDBoxLayout in KivyMD, is a box layout class that provides better compatibility with the Material Design specifications. This MDBoxLayout can be used to contain other widgets and arrange them horizontally within the application. It is a major help for the developer, this makes it easier to position other tools while designing the application.
 
 
 ## Development of Application Using Python
 
+## Setting up the file
+
+```.py
+import sqlite3
+from kivy.uix.popup import Popup
+from kivy.uix.label import Label
+from kivy.uix.button import Button
+from kivy.uix.boxlayout import BoxLayout
+from kivy.core.window import Window
+from kivymd.app import MDApp
+from kivymd.uix.boxlayout import MDBoxLayout
+from kivymd.uix.button import MDFlatButton
+from kivymd.uix.datatables import MDDataTable
+from kivymd.uix.pickers import MDTimePicker, MDDatePicker
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.dialog import MDDialog
+from mon_8_jan.my_lib import DatabaseWorker, make_hash, check_hash
+
+```
+A number of libraries needed to construct the Refrigerator Manager application are imported by the code. The SQLite database, which will be used to store information about users, workers, transactions, inventory, orders, and messages, may be accessed and modified using the sqlite3 library and DatabaseWorker. Additionally, it allows for the password can be hashed and verified. The application's graphical user interface (GUI), which will be simple to use and navigate, is built using the various kivymd libraries.
+
 ## Database worker
 
-### Accessing Information Inside of the Database
+```.py
+    def update(self):
+        db = DatabaseWorker("FactoryManager.db")
+        query = "SELECT * FROM Orders"
+        data = db.search(query, True)
+        db.close()
+        self.data_table.update_row_data(None, data)
+```
+Here we can see a function where DatabasWorker is utilized. It initializes a connection to a SQLite database with the given name. It simplifies the process of interacting with the manipulation of databases, thus making the code and time spent coding more efficient.
+Firstly it establishes a connection, then the query selects every asset and its values from the table Orders, date variable is assigned to fetching these certain values from the table and lastly, when everything has been done it closes the connection to the database. 
 
 ## Login System
+
+### User input information Verification
+
+```.py
+        if check_hash(hash, passwd):
+            print("User logged in successfully")
+            self.parent.current = "MenuScreen"  # Go to menu screen after successful login
+        else:
+            dialog = MDDialog(title="Invalid information",
+                              text=f"Please check the username or password you entered.")
+            dialog.open()
+
+```
+
+This code snippet is part of a login system. It checks whether the password entered by the user matches the password stored in the database for the corresponding username. First, it computes a hash of the entered password and compares it with the stored hash in the database. If the hashes match, indicating that the password is correct, the program proceeds to log the user in by changing the current screen to the "MenuScreen." However, if the hashes do not match, meaning the password is incorrect, it displays an error message prompting the user to check their username or password. This functionality ensures secure user authentication, a fundamental aspect of any login system. Similar methods can be applied in other parts of the codebase, such as registration and data validation, to ensure data integrity and system reliability.
 
 ### User Credential Verification
 
