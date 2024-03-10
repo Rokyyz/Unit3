@@ -105,7 +105,7 @@ Fig. 6 This is the flow diagram that details the process of how the add order me
 This procedure entails adding order details to a database systematically. Initially, it checks the input fields for completeness, ensuring they are not left empty. Upon validation, it establishes a connection with a SQLite database utilizing the DatabaseWoker class and executes an SQL query to incorporate the order information into the database. Subsequently, a notification pop-up confirms the successful addition of the order to the database. Lastly, it resets the input fields, enabling users to seamlessly input additional order data.
 
 ![flowchart for add order project 3](https://github.com/Rokyyz/Unit3/assets/134658259/362cc74f-60c8-4364-b106-a36d79dee8b0)
-the last few arrows dont show on the Fig. 6
+most of the arrows don't show on the Fig. 6 because of a bug so here is an example of how it should be
 <img width="183" alt="Screenshot 2024-03-10 at 16 41 31" src="https://github.com/Rokyyz/Unit3/assets/134658259/60656dc0-eef9-446e-805d-524ff298d5b2">
 
 Fig. 7 This is the flow diagram that details the process of how the delete method works.
