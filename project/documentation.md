@@ -176,8 +176,6 @@ The described procedure serves to remove selected rows from a table efficiently.
 # Criteria D: Functionality
 ## Video Showcasing the Functionality of the Application
 
-# Citations
-
 [^1]: Badminton racket review. "Latest Racket Reviews in the E-zone" How to choose a badminton racket?,
 [https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143387.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fbadmintonracketreview.com%2F&psig=AOvVaw2rEdTJQZrQ3b7EnWwVMIya&ust=1710081477001000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiFi46054QDFQAAAAAdAAAAABAE)https://www.google.com/url?sa=i&url=https%3A%2F%2Fbadmintonracketreview.com%2F&psig=AOvVaw2rEdTJQZrQ3b7EnWwVMIya&ust=1710081477001000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiFi46054QDFQAAAAAdAAAAABAE
 
