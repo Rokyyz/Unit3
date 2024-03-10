@@ -89,7 +89,7 @@ Fig. 3 This is the ER Diagram showing the 5 tables: workers, transactions, order
 
 
 ## UML Diagram
-Fig 4.
+Fig 4. The UML diagram offers a comprehensive representation of the object-oriented programming (OOP) classes employed throughout the application's development journey.  Through the illustrated arrows, it is evident that all subclasses inherit essential methods and attributes from these parent classes, ensuring coherence and efficiency within the application's architecture. Additionally, the inclusion of specialized classes, such as the DatabaseWorker class, underscores their crucial role in facilitating database operations, including connection establishment, data retrieval, storage, and termination, thereby contributing significantly to the application's robustness and functionality.
 
 
 
